@@ -1,0 +1,3273 @@
+<!doctype html>
+<html lang="id" class="h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- SEO Meta Tags -->
+    <title>Undangan Pernikahan Dominikus &amp; Melwinda | 02 Oktober 2027</title>
+    <meta name="description"
+        content="Dengan rahmat Tuhan Yang Maha Esa, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dalam Sakramen Perkawinan Dominikus Triuspa Mahardika &amp; Melwinda Eflin">
+    <meta name="keywords" content="undangan pernikahan, wedding invitation, katolik, dominikus, melwinda">
+    <meta name="author" content="Dominikus &amp; Melwinda"><!-- Open Graph -->
+    <meta property="og:title" content="Undangan Pernikahan Dominikus &amp; Melwinda">
+    <meta property="og:description" content="Sakramen Perkawinan - 02 Oktober 2027">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=1200">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Pernikahan Dominikus & Melwinda",
+        "startDate": "2026-02-14T09:00:00+07:00",
+        "endDate": "2027-10-02T14:00:00+07:00",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "location": {
+            "@type": "Place",
+            "name": "Gereja Katolik Santo Yohanes Pemandi, Janti",
+            "address": "Jakarta, Indonesia"
+        }
+    }
+    </script><!-- SDK -->
+    <script src="/_sdk/element_sdk.js"></script>
+    <script src="/_sdk/data_sdk.js"></script><!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script><!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&amp;family=Cinzel:wght@400;500;600;700&amp;family=Great+Vibes&amp;display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'wedding-gold': '#D4AF37',
+                        'wedding-cream': '#FAF7F2',
+                        'wedding-dark': '#1a1a2e',
+                        'wedding-navy': '#16213E',
+                        'wedding-accent': '#C9A227'
+                    },
+                    fontFamily: {
+                        'display': ['Cinzel', 'serif'],
+                        'script': ['Great Vibes', 'cursive'],
+                        'body': ['Cormorant Garamond', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* ==================== */
+        /* CSS UTAMA - WEDDING  */
+        /* ==================== */
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Floating Particles Background */
+        #wedding-dominikus-melwinda-particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 10;
+            pointer-events: none;
+        }
+
+        /* Watermark Protection */
+        .wedding-dominikus-melwinda-watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            font-size: 8rem;
+            font-family: 'Great Vibes', cursive;
+            color: rgba(212, 175, 55, 0.08);
+            z-index: 5;
+            pointer-events: none;
+            white-space: nowrap;
+            width: 150%;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        /* Cinematic Intro Overlay */
+        .wedding-dominikus-melwinda-intro {
+            position: fixed;
+            inset: 0;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213E 100%);
+            z-index: 9998;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.8s ease, visibility 0.8s ease;
+        }
+
+        .wedding-dominikus-melwinda-intro.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .wedding-dominikus-melwinda-intro-content {
+            text-align: center;
+            max-width: 600px;
+            padding: 2rem;
+        }
+
+        .wedding-dominikus-melwinda-intro-quote {
+            font-family: 'Great Vibes', cursive;
+            font-size: 1.5rem;
+            color: rgba(212, 175, 55, 0.8);
+            margin-bottom: 3rem;
+            opacity: 0;
+            animation: wedding-dominikus-melwinda-fadeIn 1s ease 0.5s forwards;
+        }
+
+        .wedding-dominikus-melwinda-intro-names {
+            font-family: 'Great Vibes', cursive;
+            font-size: 4rem;
+            color: #D4AF37;
+            opacity: 0;
+            animation: wedding-dominikus-melwinda-fadeIn 1s ease 2s forwards;
+        }
+
+        .wedding-dominikus-melwinda-intro-btn {
+            margin-top: 4rem;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, #D4AF37, #C9A227);
+            color: #FFFFFF;
+            font-family: 'Cinzel', serif;
+            font-size: 0.875rem;
+            letter-spacing: 0.1em;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            opacity: 0;
+            animation: wedding-dominikus-melwinda-fadeIn 1s ease 3s forwards;
+        }
+
+        .wedding-dominikus-melwinda-intro-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
+        }
+
+        @keyframes wedding-dominikus-melwinda-fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Variabel CSS untuk tema */
+        :root {
+            --wedding-bg-primary: #FAF7F2;
+            --wedding-bg-secondary: #FFFFFF;
+            --wedding-text-primary: #2D2D2D;
+            --wedding-text-secondary: #5A5A5A;
+            --wedding-gold: #D4AF37;
+            --wedding-gold-light: #E8D5A3;
+            --wedding-border: rgba(212, 175, 55, 0.3);
+        }
+
+        /* Tema Gelap */
+        .wedding-dominikus-melwinda-dark {
+            --wedding-bg-primary: #1a1a2e;
+            --wedding-bg-secondary: #16213E;
+            --wedding-text-primary: #FAF7F2;
+            --wedding-text-secondary: #C9C9C9;
+            --wedding-gold: #D4AF37;
+            --wedding-gold-light: #C9A227;
+            --wedding-border: rgba(212, 175, 55, 0.4);
+        }
+
+        /* Aplikasi warna tema */
+        .wedding-dominikus-melwinda-app {
+            background-color: var(--wedding-bg-primary);
+            color: var(--wedding-text-primary);
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        .wedding-dominikus-melwinda-card {
+            background-color: var(--wedding-bg-secondary);
+        }
+
+        .wedding-dominikus-melwinda-text-secondary {
+            color: var(--wedding-text-secondary);
+        }
+
+        /* Loading Screen */
+        .wedding-dominikus-melwinda-loading {
+            position: fixed;
+            inset: 0;
+            background: linear-gradient(135deg, #FAF7F2 0%, #E8D5A3 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.8s ease, visibility 0.8s ease;
+        }
+
+        .wedding-dominikus-melwinda-loading.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .wedding-dominikus-melwinda-monogram {
+            font-family: 'Great Vibes', cursive;
+            font-size: 5rem;
+            color: #D4AF37;
+            animation: wedding-dominikus-melwinda-pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes wedding-dominikus-melwinda-pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            50% {
+                transform: scale(1.05);
+                opacity: 0.8;
+            }
+        }
+
+        /* Progress Bar */
+        .wedding-dominikus-melwinda-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #D4AF37, #C9A227);
+            z-index: 1000;
+            transition: width 0.1s ease;
+        }
+
+        /* Hero Section */
+        .wedding-dominikus-melwinda-hero {
+            min-height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+                url('https://images.unsplash.com/photo-1510076857177-7470076d4098?w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: scroll;
+            position: relative;
+            padding-top: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (min-width: 768px) {
+            .wedding-dominikus-melwinda-hero {
+                background-attachment: fixed;
+            }
+        }
+
+        /* Navbar */
+        .wedding-dominikus-melwinda-navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            transition: all 0.4s ease;
+            padding: 1rem 0;
+        }
+
+        .wedding-dominikus-melwinda-navbar.scrolled {
+            background: var(--wedding-bg-secondary);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            padding: 0.5rem 0;
+        }
+
+        .wedding-dominikus-melwinda-navbar.scrolled .wedding-dominikus-melwinda-nav-link {
+            color: var(--wedding-text-primary);
+        }
+
+        .wedding-dominikus-melwinda-nav-link {
+            color: #FFFFFF;
+            font-family: 'Cinzel', serif;
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .wedding-dominikus-melwinda-nav-link:hover,
+        .wedding-dominikus-melwinda-nav-link.active {
+            color: #D4AF37;
+        }
+
+        .wedding-dominikus-melwinda-nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: #D4AF37;
+            transition: width 0.3s ease;
+        }
+
+        .wedding-dominikus-melwinda-nav-link:hover::after,
+        .wedding-dominikus-melwinda-nav-link.active::after {
+            width: 100%;
+        }
+
+        /* Section Styling */
+        .wedding-dominikus-melwinda-section {
+            padding: 5rem 1rem;
+            position: relative;
+        }
+
+        .wedding-dominikus-melwinda-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(212, 175, 55, 0);
+            pointer-events: none;
+            z-index: 1;
+            transition: background-color 0.3s ease;
+        }
+
+        .wedding-dominikus-melwinda-section.transitioning::before {
+            background: rgba(212, 175, 55, 0.15);
+        }
+
+        .wedding-dominikus-melwinda-section-title {
+            font-family: 'Cinzel', serif;
+            font-size: 2rem;
+            color: var(--wedding-gold);
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .wedding-dominikus-melwinda-section-title::after {
+            content: '✝';
+            display: block;
+            font-size: 1rem;
+            margin-top: 0.5rem;
+            opacity: 0.6;
+        }
+
+        /* Love Story Timeline */
+        .wedding-dominikus-melwinda-story-section {
+            padding: 5rem 1rem;
+            position: relative;
+            opacity: 0.5;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .wedding-dominikus-melwinda-story-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .wedding-dominikus-melwinda-story-item {
+            background: var(--wedding-bg-secondary);
+            border: 1px solid var(--wedding-border);
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.8s ease;
+        }
+
+        .wedding-dominikus-melwinda-story-item.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .wedding-dominikus-melwinda-story-item.alt-side {
+            transform: translateX(50px);
+        }
+
+        .wedding-dominikus-melwinda-story-item.alt-side.visible {
+            transform: translateX(0);
+        }
+
+        .wedding-dominikus-melwinda-story-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            gap: 1rem;
+        }
+
+        .wedding-dominikus-melwinda-story-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(212, 175, 55, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .wedding-dominikus-melwinda-story-year {
+            font-family: 'Cinzel', serif;
+            font-size: 0.875rem;
+            color: var(--wedding-gold);
+            letter-spacing: 0.1em;
+        }
+
+        /* Promise Section */
+        .wedding-dominikus-melwinda-promise {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.05), rgba(212, 175, 55, 0.02));
+            border: 1px solid var(--wedding-border);
+            border-radius: 1rem;
+            padding: 3rem 2rem;
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .wedding-dominikus-melwinda-promise-title {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2rem;
+            color: var(--wedding-gold);
+            margin-bottom: 2rem;
+        }
+
+        .wedding-dominikus-melwinda-promise-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .wedding-dominikus-melwinda-promise-item {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.125rem;
+            color: var(--wedding-text-primary);
+            display: flex;
+            align-items: start;
+            gap: 1rem;
+        }
+
+        .wedding-dominikus-melwinda-promise-bullet {
+            color: var(--wedding-gold);
+            font-weight: bold;
+            flex-shrink: 0;
+            margin-top: 0.25rem;
+        }
+
+        /* Ornamen Dekoratif */
+        .wedding-dominikus-melwinda-ornament {
+            width: 200px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--wedding-gold), transparent);
+            margin: 1rem auto;
+        }
+
+        /* Confetti Animation */
+        @keyframes wedding-dominikus-melwinda-confetti {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(600px) rotate(720deg);
+                opacity: 0;
+            }
+        }
+
+        .wedding-dominikus-melwinda-confetti-piece {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background: #D4AF37;
+            pointer-events: none;
+            z-index: 2000;
+        }
+
+        /* Fireworks Animation */
+        @keyframes wedding-dominikus-melwinda-firework {
+            0% {
+                transform: translate(0, 0) scale(1);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translate(var(--tx), var(--ty)) scale(0);
+                opacity: 0;
+            }
+        }
+
+        .wedding-dominikus-melwinda-firework {
+            position: fixed;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 2000;
+        }
+
+        /* Card Styling */
+        .wedding-dominikus-melwinda-glass-card {
+            background: var(--wedding-bg-secondary);
+            border: 1px solid var(--wedding-border);
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .wedding-dominikus-melwinda-glass-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Timeline */
+        .wedding-dominikus-melwinda-timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .wedding-dominikus-melwinda-timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--wedding-gold), transparent);
+        }
+
+        .wedding-dominikus-melwinda-timeline-item {
+            position: relative;
+            padding-bottom: 2rem;
+        }
+
+        .wedding-dominikus-melwinda-timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2rem;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            background: var(--wedding-gold);
+            border-radius: 50%;
+            transform: translateX(-5px);
+        }
+
+        /* Gallery Grid */
+        .wedding-dominikus-melwinda-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .wedding-dominikus-melwinda-gallery {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .wedding-dominikus-melwinda-gallery-item {
+            aspect-ratio: 1;
+            overflow: hidden;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .wedding-dominikus-melwinda-gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .wedding-dominikus-melwinda-gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Lightbox */
+        .wedding-dominikus-melwinda-lightbox {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .wedding-dominikus-melwinda-lightbox.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .wedding-dominikus-melwinda-lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 0.5rem;
+        }
+
+        /* Form Styling */
+        .wedding-dominikus-melwinda-input {
+            width: 100%;
+            padding: 1rem;
+            background: var(--wedding-bg-primary);
+            border: 1px solid var(--wedding-border);
+            border-radius: 0.5rem;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1rem;
+            color: var(--wedding-text-primary);
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .wedding-dominikus-melwinda-input:focus {
+            outline: none;
+            border-color: var(--wedding-gold);
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+        }
+
+        .wedding-dominikus-melwinda-btn {
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #D4AF37, #C9A227);
+            color: #FFFFFF;
+            font-family: 'Cinzel', serif;
+            font-size: 0.875rem;
+            letter-spacing: 0.1em;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .wedding-dominikus-melwinda-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
+        }
+
+        .wedding-dominikus-melwinda-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        /* Countdown */
+        .wedding-dominikus-melwinda-countdown {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .wedding-dominikus-melwinda-countdown-item {
+            text-align: center;
+            min-width: 70px;
+        }
+
+        .wedding-dominikus-melwinda-countdown-number {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            color: var(--wedding-gold);
+            line-height: 1;
+        }
+
+        .wedding-dominikus-melwinda-countdown-label {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 0.875rem;
+            color: var(--wedding-text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        /* Music Control */
+        .wedding-dominikus-melwinda-music-btn {
+            position: fixed;
+            bottom: 6rem;
+            right: 1.5rem;
+            width: 50px;
+            height: 50px;
+            background: var(--wedding-gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 99;
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .wedding-dominikus-melwinda-music-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .wedding-dominikus-melwinda-music-btn.playing {
+            animation: wedding-dominikus-melwinda-music-pulse 1s ease-in-out infinite;
+        }
+
+        @keyframes wedding-dominikus-melwinda-music-pulse {
+
+            0%,
+            100% {
+                box-shadow: 0 4px 20px rgba(212, 175, 55, 0.4);
+            }
+
+            50% {
+                box-shadow: 0 4px 30px rgba(212, 175, 55, 0.8);
+            }
+        }
+
+        /* Scroll to Top */
+        .wedding-dominikus-melwinda-scroll-top {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            width: 50px;
+            height: 50px;
+            background: var(--wedding-bg-secondary);
+            border: 1px solid var(--wedding-border);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 99;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .wedding-dominikus-melwinda-scroll-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .wedding-dominikus-melwinda-scroll-top:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Theme Toggle */
+        .wedding-dominikus-melwinda-theme-toggle {
+            position: fixed;
+            bottom: 10.5rem;
+            right: 1.5rem;
+            width: 50px;
+            height: 50px;
+            background: var(--wedding-bg-secondary);
+            border: 1px solid var(--wedding-border);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 99;
+            transition: all 0.3s ease;
+        }
+
+        .wedding-dominikus-melwinda-theme-toggle:hover {
+            transform: scale(1.1);
+        }
+
+        /* Mobile Menu */
+        .wedding-dominikus-melwinda-mobile-menu {
+            position: fixed;
+            inset: 0;
+            background: var(--wedding-bg-primary);
+            z-index: 200;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s ease;
+        }
+
+        .wedding-dominikus-melwinda-mobile-menu.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .wedding-dominikus-melwinda-mobile-link {
+            font-family: 'Cinzel', serif;
+            font-size: 1.25rem;
+            color: var(--wedding-text-primary);
+            letter-spacing: 0.2em;
+            transition: color 0.3s ease;
+        }
+
+        .wedding-dominikus-melwinda-mobile-link:hover {
+            color: var(--wedding-gold);
+        }
+
+        /* =========================================
+   Toast Notification - Modern 2026 (Safe)
+   ========================================= */
+
+        .wedding-dominikus-melwinda-toast {
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translate(-50%, 40px);
+
+            /* Layout */
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            max-width: 420px;
+            width: calc(100% - 2rem);
+            padding: 1rem 1.25rem;
+
+            /* Theme-based background */
+            background: var(--wedding-bg-secondary);
+
+            /* Border mengikuti sistem */
+            border: 1px solid var(--wedding-border);
+
+            /* Radius lebih modern */
+            border-radius: 18px;
+
+            /* Typography */
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--wedding-text-primary);
+            letter-spacing: 0.3px;
+
+            /* Elevation modern */
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, 0.08),
+                0 2px 6px rgba(0, 0, 0, 0.05);
+
+            /* Animation */
+            opacity: 0;
+            pointer-events: none;
+            transition:
+                opacity 0.4s ease,
+                transform 0.45s cubic-bezier(.22, 1, .36, 1),
+                box-shadow 0.3s ease;
+
+            z-index: 1000;
+        }
+
+        /* Show State */
+        .wedding-dominikus-melwinda-toast.show {
+            opacity: 1;
+            transform: translate(-50%, 0);
+            pointer-events: auto;
+        }
+
+        /* Hover Micro Interaction */
+        .wedding-dominikus-melwinda-toast:hover {
+            box-shadow:
+                0 14px 40px rgba(0, 0, 0, 0.12),
+                0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Accent Bar (Premium Detail) */
+        .wedding-dominikus-melwinda-toast::before {
+            content: '';
+            width: 4px;
+            height: 100%;
+            background: var(--wedding-gold);
+            border-radius: 4px;
+        }
+
+        /* Success Variant */
+        .wedding-dominikus-melwinda-toast.success::before {
+            background: #48bb78;
+        }
+
+        /* Error Variant */
+        .wedding-dominikus-melwinda-toast.error::before {
+            background: #ef4444;
+        }
+
+        /* Messages List */
+        .wedding-dominikus-melwinda-message-card {
+            background: var(--wedding-bg-secondary);
+            border: 1px solid var(--wedding-border);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            animation: wedding-dominikus-melwinda-fadeIn 0.5s ease;
+        }
+
+        @keyframes wedding-dominikus-melwinda-fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* QR Code Container */
+        .wedding-dominikus-melwinda-qr {
+            width: 200px;
+            height: 200px;
+            background: #FFFFFF;
+            border-radius: 1rem;
+            padding: 1rem;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Virtual Candle */
+        .wedding-dominikus-melwinda-candle {
+            position: relative;
+            display: inline-block;
+        }
+
+        .wedding-dominikus-melwinda-candle-flame {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 12px;
+            height: 30px;
+            background: linear-gradient(to top, #FFD700, #FFA500, #FF6347);
+            border-radius: 50% 50% 50% 0;
+            opacity: 0;
+            animation: wedding-dominikus-melwinda-flame-flicker 0.6s ease-in-out infinite;
+        }
+
+        .wedding-dominikus-melwinda-candle-flame.lit {
+            opacity: 1;
+        }
+
+        @keyframes wedding-dominikus-melwinda-flame-flicker {
+
+            0%,
+            100% {
+                transform: translateX(-50%) scaleY(1) scaleX(0.9);
+            }
+
+            50% {
+                transform: translateX(-50%) scaleY(1.1) scaleX(1.05);
+            }
+        }
+
+        /* Poll Bar */
+        .wedding-dominikus-melwinda-poll-bar {
+            background: var(--wedding-border);
+            height: 8px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 0.5rem 0;
+        }
+
+        .wedding-dominikus-melwinda-poll-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #D4AF37, #C9A227);
+            transition: width 0.3s ease;
+            border-radius: 10px;
+        }
+
+        /* Slideshow Modal */
+        .wedding-dominikus-melwinda-slideshow-modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 9000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .wedding-dominikus-melwinda-slideshow-modal.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .wedding-dominikus-melwinda-slideshow-container {
+            position: relative;
+            max-width: 90vw;
+            max-height: 80vh;
+        }
+
+        .wedding-dominikus-melwinda-slideshow-image {
+            width: 100%;
+            height: 100%;
+            max-height: 80vh;
+            object-fit: contain;
+            border-radius: 1rem;
+        }
+
+        .wedding-dominikus-melwinda-slideshow-nav {
+            position: absolute;
+            bottom: -60px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 1rem;
+            z-index: 2;
+        }
+
+        .wedding-dominikus-melwinda-slideshow-counter {
+            position: absolute;
+            top: -50px;
+            right: 0;
+            font-family: 'Cormorant Garamond', serif;
+            color: var(--wedding-gold);
+            font-size: 0.875rem;
+        }
+
+        .wedding-dominikus-melwinda-slideshow-close {
+            position: absolute;
+            top: -50px;
+            left: 0;
+            background: none;
+            border: none;
+            color: var(--wedding-gold);
+            font-size: 2rem;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .wedding-dominikus-melwinda-slideshow-close:hover {
+            transform: scale(1.2);
+        }
+
+        /* Blessing Animation Overlay */
+        .wedding-dominikus-melwinda-blessing-overlay {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 8;
+            background: radial-gradient(circle at center, rgba(212, 175, 55, 0) 0%, rgba(212, 175, 55, 0.05) 100%);
+            opacity: 0;
+            transition: opacity 0.8s ease;
+        }
+
+        .wedding-dominikus-melwinda-blessing-overlay.active {
+            opacity: 1;
+        }
+
+        .wedding-dominikus-melwinda-light-rays {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 7;
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+
+        .wedding-dominikus-melwinda-light-rays.active {
+            opacity: 0.3;
+            background: linear-gradient(90deg, transparent 0%, rgba(212, 175, 55, 0.1) 25%, transparent 50%, rgba(212, 175, 55, 0.1) 75%, transparent 100%);
+        }
+
+        .wedding-dominikus-melwinda-cross-icon {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 5rem;
+            color: var(--wedding-gold);
+            opacity: 0;
+            z-index: 6;
+            pointer-events: none;
+            animation: wedding-dominikus-melwinda-cross-fade 3s ease forwards;
+        }
+
+        @keyframes wedding-dominikus-melwinda-cross-fade {
+            0% {
+                opacity: 0;
+            }
+
+            30% {
+                opacity: 0.4;
+            }
+
+            70% {
+                opacity: 0.4;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        /* Skip to Content - Accessibility */
+        .wedding-dominikus-melwinda-skip {
+            position: absolute;
+            left: -9999px;
+            z-index: 9999;
+            padding: 1rem;
+            background: var(--wedding-gold);
+            color: #FFFFFF;
+        }
+
+        .wedding-dominikus-melwinda-skip:focus {
+            left: 0;
+            top: 0;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .wedding-dominikus-melwinda-section {
+                padding: 3rem 1rem;
+            }
+
+            .wedding-dominikus-melwinda-section-title {
+                font-size: 1.5rem;
+            }
+
+            .wedding-dominikus-melwinda-countdown-number {
+                font-size: 2rem;
+            }
+
+            .wedding-dominikus-melwinda-monogram {
+                font-size: 3rem;
+            }
+
+            .wedding-dominikus-melwinda-watermark {
+                font-size: 4rem;
+            }
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Focus States for Accessibility */
+        *:focus-visible {
+            outline: 2px solid var(--wedding-gold);
+            outline-offset: 2px;
+        }
+
+        /* Hamburger Menu */
+        .wedding-dominikus-melwinda-hamburger {
+            width: 30px;
+            height: 20px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .wedding-dominikus-melwinda-hamburger span {
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: #FFFFFF;
+            transition: all 0.3s ease;
+        }
+
+        .wedding-dominikus-melwinda-navbar.scrolled .wedding-dominikus-melwinda-hamburger span {
+            background: var(--wedding-text-primary);
+        }
+
+        .wedding-dominikus-melwinda-hamburger span:nth-child(1) {
+            top: 0;
+        }
+
+        .wedding-dominikus-melwinda-hamburger span:nth-child(2) {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .wedding-dominikus-melwinda-hamburger span:nth-child(3) {
+            bottom: 0;
+        }
+
+        .wedding-dominikus-melwinda-hamburger.active span:nth-child(1) {
+            transform: rotate(45deg);
+            top: 50%;
+        }
+
+        .wedding-dominikus-melwinda-hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .wedding-dominikus-melwinda-hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg);
+            bottom: 50%;
+        }
+
+        .material-symbols-outlined {
+            font-size: 22px;
+            color: var(--wedding-gold);
+            line-height: 1;
+        }
+
+        .wedding-dominikus-melwinda-candle-flame {
+            position: absolute;
+            top: -26px;
+            left: 50%;
+            width: 14px;
+            height: 22px;
+            background: radial-gradient(circle at 50% 40%, #fff 5%, #ffd54f 40%, #ff9800 70%, #ff5722 100%);
+            border-radius: 50% 50% 50% 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            animation: weddingDominikusMelwindaFlicker 1.5s infinite ease-in-out;
+            filter: drop-shadow(0 0 8px rgba(255, 140, 0, 0.7));
+        }
+
+        @keyframes weddingDominikusMelwindaFlicker {
+
+            0%,
+            100% {
+                transform: translateX(-50%) scale(1) rotate(-2deg);
+            }
+
+            50% {
+                transform: translateX(-50%) scale(1.1) rotate(2deg);
+            }
+        }
+    </style>
+    <style>
+        .wedding-dominikus-melwinda-promise-bullet .material-symbols-outlined {
+            font-size: 20px;
+            color: var(--wedding-gold);
+            vertical-align: middle;
+        }
+
+        .wedding-dominikus-melwinda-glass-card .material-symbols-outlined {
+            font-size: 22px;
+            color: var(--wedding-gold);
+        }
+
+        .material-symbols-outlined {
+            font-size: 22px;
+            line-height: 1;
+            vertical-align: middle;
+        }
+
+        .material-symbols-outlined-movie {
+            color: white;
+        }
+    </style>
+    <style>
+        .wedding-dominikus-melwinda-intro-photo {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .wedding-dominikus-melwinda-intro-img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid var(--wedding-gold);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+            transition: transform 0.4s ease;
+        }
+
+        .wedding-dominikus-melwinda-intro-img:hover {
+            transform: scale(1.05);
+        }
+
+        @media (min-width: 768px) {
+            .wedding-dominikus-melwinda-intro-img {
+                width: 220px;
+                height: 220px;
+            }
+        }
+    </style>
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body class="h-full"><!-- Skip to Content - Accessibility --> <a href="#main-content"
+        class="wedding-dominikus-melwinda-skip" aria-label="Langsung ke konten utama"> Langsung ke Konten Utama </a>
+    <!-- Watermark Protection -->
+    <div class="wedding-dominikus-melwinda-watermark">
+        Dominikus &amp; Melwinda 2026
+    </div><!-- Loading Screen -->
+    <div class="wedding-dominikus-melwinda-intro" id="wedding-dominikus-melwinda-intro">
+        <div class="wedding-dominikus-melwinda-intro-content">
+
+            <!-- Foto Pengantin (Global Image Placeholder) -->
+            <div class="wedding-dominikus-melwinda-intro-photo">
+                <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?q=80&w=800&auto=format&fit=crop"
+                    alt="Foto Pengantin" class="wedding-dominikus-melwinda-intro-img" loading="lazy">
+            </div>
+
+            <p class="wedding-dominikus-melwinda-intro-quote">
+                Sebuah perjalanan cinta yang Tuhan satukan…
+            </p>
+
+            <p class="wedding-dominikus-melwinda-intro-names">
+                D &amp; M
+            </p>
+
+            <button class="wedding-dominikus-melwinda-intro-btn" id="wedding-dominikus-melwinda-open-btn">
+                Buka Undangan Pernikahan
+            </button>
+
+        </div>
+    </div>
+    <!-- Floating Particles Canvas -->
+    <canvas id="wedding-dominikus-melwinda-particles"></canvas><!-- Blessing Overlays -->
+    <div class="wedding-dominikus-melwinda-blessing-overlay" id="wedding-dominikus-melwinda-blessing-overlay"></div>
+    <div class="wedding-dominikus-melwinda-light-rays" id="wedding-dominikus-melwinda-light-rays"></div>
+    <div class="wedding-dominikus-melwinda-cross-icon" id="wedding-dominikus-melwinda-cross-icon">
+        ✝
+    </div><!-- Progress Bar -->
+    <div class="wedding-dominikus-melwinda-progress" id="wedding-dominikus-melwinda-progress" role="progressbar"
+        aria-label="Progress halaman"></div><!-- Main Application Container -->
+    <div class="wedding-dominikus-melwinda-app h-full w-full overflow-auto" id="wedding-dominikus-melwinda-app">
+        <!-- Navbar -->
+        <nav class="wedding-dominikus-melwinda-navbar" id="wedding-dominikus-melwinda-navbar" role="navigation"
+            aria-label="Menu utama">
+            <div class="max-w-6xl mx-auto px-4 flex items-center justify-between"><a href="#beranda"
+                    class="font-script text-2xl text-wedding-gold">D &amp; M</a> <!-- Desktop Nav -->
+                <div class="hidden md:flex items-center gap-8"><a href="#beranda"
+                        class="wedding-dominikus-melwinda-nav-link active" data-section="beranda">BERANDA</a> <a
+                        href="#pengantin" class="wedding-dominikus-melwinda-nav-link"
+                        data-section="pengantin">PENGANTIN</a> <a href="#kisah"
+                        class="wedding-dominikus-melwinda-nav-link" data-section="kisah">KISAH</a> <a href="#nilai"
+                        class="wedding-dominikus-melwinda-nav-link" data-section="nilai">NILAI</a> <a href="#sakramen"
+                        class="wedding-dominikus-melwinda-nav-link" data-section="sakramen">SAKRAMEN</a> <a
+                        href="#galeri" class="wedding-dominikus-melwinda-nav-link" data-section="galeri">GALERI</a> <a
+                        href="#rsvp" class="wedding-dominikus-melwinda-nav-link" data-section="rsvp">RSVP</a> <a
+                        href="#hadiah" class="wedding-dominikus-melwinda-nav-link" data-section="hadiah">HADIAH</a>
+                </div><!-- Mobile Hamburger -->
+                <div class="wedding-dominikus-melwinda-hamburger md:hidden" id="wedding-dominikus-melwinda-hamburger"
+                    role="button" aria-label="Buka menu" aria-expanded="false"><span></span> <span></span> <span></span>
+                </div>
+            </div>
+        </nav><!-- Mobile Menu -->
+        <div class="wedding-dominikus-melwinda-mobile-menu" id="wedding-dominikus-melwinda-mobile-menu" role="dialog"
+            aria-label="Menu navigasi mobile"><button class="absolute top-4 right-4 text-3xl"
+                id="wedding-dominikus-melwinda-close-menu" aria-label="Tutup menu">×</button> <a href="#beranda"
+                class="wedding-dominikus-melwinda-mobile-link">BERANDA</a> <a href="#pengantin"
+                class="wedding-dominikus-melwinda-mobile-link">PENGANTIN</a> <a href="#kisah"
+                class="wedding-dominikus-melwinda-mobile-link">KISAH</a> <a href="#nilai"
+                class="wedding-dominikus-melwinda-mobile-link">NILAI</a> <a href="#sakramen"
+                class="wedding-dominikus-melwinda-mobile-link">SAKRAMEN</a> <a href="#galeri"
+                class="wedding-dominikus-melwinda-mobile-link">GALERI</a> <a href="#rsvp"
+                class="wedding-dominikus-melwinda-mobile-link">RSVP</a> <a href="#hadiah"
+                class="wedding-dominikus-melwinda-mobile-link">HADIAH</a>
+        </div><!-- Main Content -->
+        <main id="main-content"><!-- ==================== --> <!-- HERO SECTION         -->
+            <!-- ==================== -->
+            <section id="beranda"
+                class="wedding-dominikus-melwinda-hero flex items-center justify-center text-center text-white">
+                <div class="px-4 wedding-dominikus-melwinda-reveal"><!-- Ayat Pembuka -->
+                    <p class="font-body text-sm md:text-base tracking-widest mb-6 opacity-90">"Di mana ada cinta, di
+                        situ ada Tuhan"</p><!-- Nama Mempelai -->
+                    <h1 class="font-script text-5xl md:text-7xl lg:text-8xl mb-4" id="wedding-dominikus-melwinda-names">
+                        Dominikus &amp; Melwinda</h1><!-- Nama Lengkap Kedua Mempelai -->
+                    <div class="mb-6 text-xs md:text-sm tracking-wide">
+                        <p class="font-body text-white opacity-90 mb-3">
+                            Putra dari
+                            <span id="wedding-dominikus-melwinda-groom-father">
+                                Bapak Vincentius Raden Tri Joko Kumoro
+                            </span> &amp;
+                            <span id="wedding-dominikus-melwinda-groom-mother">
+                                Ibu Vincentia Depaula Ngatimah
+                            </span>
+                        </p>
+
+                        <p class="font-body text-white opacity-90">
+                            Putri dari
+                            <span id="wedding-dominikus-melwinda-bride-father">
+                                Bapak [Nama Ayah]
+                            </span> &amp;
+                            <span id="wedding-dominikus-melwinda-bride-mother">
+                                Ibu [Nama Ibu]
+                            </span>
+                        </p>
+                    </div>
+                    <div class="wedding-dominikus-melwinda-ornament"></div><!-- Tanggal -->
+                    <p class="font-display text-lg md:text-xl tracking-widest mb-8"
+                        id="wedding-dominikus-melwinda-date-display">SABTU, 02 Oktober 2027</p><!-- Ayat Kitab Suci -->
+                    <blockquote class="font-body italic text-sm md:text-base max-w-xl mx-auto mb-8 opacity-90">
+                        "Demikianlah mereka bukan lagi dua, melainkan satu. Karena itu, apa yang telah dipersatukan
+                        Allah, tidak boleh diceraikan manusia." <cite class="block mt-2 not-italic text-wedding-gold">—
+                            Matius 19:6</cite>
+                    </blockquote><!-- Countdown -->
+                    <div class="wedding-dominikus-melwinda-countdown mb-8" id="wedding-dominikus-melwinda-countdown">
+                        <div class="wedding-dominikus-melwinda-countdown-item">
+                            <div class="wedding-dominikus-melwinda-countdown-number"
+                                id="wedding-dominikus-melwinda-days">
+                                0
+                            </div>
+                            <div class="wedding-dominikus-melwinda-countdown-label">
+                                Hari
+                            </div>
+                        </div>
+                        <div class="wedding-dominikus-melwinda-countdown-item">
+                            <div class="wedding-dominikus-melwinda-countdown-number"
+                                id="wedding-dominikus-melwinda-hours">
+                                0
+                            </div>
+                            <div class="wedding-dominikus-melwinda-countdown-label">
+                                Jam
+                            </div>
+                        </div>
+                        <div class="wedding-dominikus-melwinda-countdown-item">
+                            <div class="wedding-dominikus-melwinda-countdown-number"
+                                id="wedding-dominikus-melwinda-minutes">
+                                0
+                            </div>
+                            <div class="wedding-dominikus-melwinda-countdown-label">
+                                Menit
+                            </div>
+                        </div>
+                        <div class="wedding-dominikus-melwinda-countdown-item">
+                            <div class="wedding-dominikus-melwinda-countdown-number"
+                                id="wedding-dominikus-melwinda-seconds">
+                                0
+                            </div>
+                            <div class="wedding-dominikus-melwinda-countdown-label">
+                                Detik
+                            </div>
+                        </div>
+                    </div><!-- Scroll Indicator -->
+                    <div class="animate-bounce">
+                        <svg class="w-6 h-6 mx-auto text-wedding-gold" fill="none" stroke="currentColor"
+                            viewbox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                    </div>
+                </div>
+            </section><!-- ==================== --> <!-- PENGANTIN            --> <!-- ==================== -->
+            <section id="pengantin" class="wedding-dominikus-melwinda-section"
+                style="background: var(--wedding-bg-secondary);">
+                <div class="max-w-5xl mx-auto"><!-- Salam Pembuka -->
+                    <div class="text-center mb-12 wedding-dominikus-melwinda-reveal">
+                        <p
+                            class="font-body text-sm md:text-base tracking-widest mb-4 opacity-90 wedding-dominikus-melwinda-text-secondary">
+                            Dengan Rahmat Tuhan Yang Maha Esa</p>
+                        <blockquote
+                            class="font-body italic wedding-dominikus-melwinda-text-secondary mb-6 leading-relaxed max-w-2xl mx-auto">
+                            "Allah menciptakan manusia laki-laki dan perempuan menurut gambar dan rupa Allah sendiri.
+                            Mereka saling melengkapi, dan dalam kasih setia mereka menemukan keabadian." <cite
+                                class="block mt-3 not-italic text-wedding-gold">— Kejadian 1:27 &amp; 2:18</cite>
+                        </blockquote>
+                    </div>
+                    <h2 class="wedding-dominikus-melwinda-section-title wedding-dominikus-melwinda-reveal">Mempelai Kami
+                    </h2>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- Mempelai Pria -->
+                        <div
+                            class="wedding-dominikus-melwinda-glass-card overflow-hidden wedding-dominikus-melwinda-reveal">
+                            <div
+                                class="bg-gradient-to-br from-wedding-gold/10 to-transparent h-80 mb-6 rounded-lg overflow-hidden">
+                                <img src="img/pengantin/dika.jpeg" alt="Foto Mempelai Pria" loading="lazy"
+                                    onerror="this.style.background='linear-gradient(135deg, #D4AF37, #C9A227)'; this.alt='Foto tidak tersedia';"
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <div class="text-center">
+                                <h3 class="font-script text-4xl text-wedding-gold mb-2">Dika</h3>
+                                <p class="font-body text-sm text-wedding-gold mb-4 tracking-widest">MEMPELAI PRIA</p>
+                                <div class="wedding-dominikus-melwinda-ornament"></div>
+                                <div class="text-left mt-6 space-y-3">
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-wedding-gold text-xl flex-shrink-0">
+                                            <span class="material-symbols-outlined">church</span>
+                                        </span>
+                                        <div>
+                                            <p class="font-display text-sm text-wedding-gold">Nama Lengkap</p>
+                                            <p class="font-body" id="pengantin-groom-fullname">Dominikus Triuspa
+                                                Mahardika</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-wedding-gold text-xl flex-shrink-0">
+                                            <span class="material-symbols-outlined">groups</span>
+                                        </span>
+                                        <div>
+                                            <p class="font-display text-sm text-wedding-gold">Orang Tua</p>
+                                            <p class="font-body text-sm" id="pengantin-groom-parents">
+                                                Bapak Vincentius Raden Tri Joko Kumoro &amp; Ibu Vincentia Depaula
+                                                Ngatimah
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-wedding-gold text-xl flex-shrink-0">
+                                            <span class="material-symbols-outlined">location_on</span>
+                                        </span>
+                                        <div>
+                                            <p class="font-display text-sm text-wedding-gold">Asal</p>
+                                            <p class="font-body">Kota Malang, Indonesia</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-wedding-gold text-xl flex-shrink-0">
+                                            <span class="material-symbols-outlined">work</span>
+                                        </span>
+                                        <div>
+                                            <p class="font-display text-sm text-wedding-gold">Profesi</p>
+                                            <p class="font-body">[Pekerjaan Mempelai Pria]</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p
+                                    class="font-body wedding-dominikus-melwinda-text-secondary text-sm mt-6 leading-relaxed italic">
+                                    "Hidup untuk melayani Tuhan dan mencintai istri seperti Kristus mencintai gereja."
+                                </p>
+                            </div>
+                        </div><!-- Mempelai Wanita -->
+                        <div
+                            class="wedding-dominikus-melwinda-glass-card overflow-hidden wedding-dominikus-melwinda-reveal">
+                            <div
+                                class="bg-gradient-to-br from-wedding-gold/10 to-transparent h-80 mb-6 rounded-lg overflow-hidden">
+                                <img src="img/pengantin/eflin.jpeg" alt="Foto Mempelai Wanita" loading="lazy"
+                                    onerror="this.style.background='linear-gradient(135deg, #D4AF37, #C9A227)'; this.alt='Foto tidak tersedia';"
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <div class="text-center">
+                                <h3 class="font-script text-4xl text-wedding-gold mb-2">Melwinda</h3>
+                                <p class="font-body text-sm text-wedding-gold mb-4 tracking-widest">MEMPELAI WANITA</p>
+                                <div class="wedding-dominikus-melwinda-ornament"></div>
+                                <div class="text-left mt-6 space-y-3">
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-wedding-gold text-xl flex-shrink-0"><span
+                                                class="material-symbols-outlined">church</span></span>
+                                        <div>
+                                            <p class="font-display text-sm text-wedding-gold">Nama Lengkap</p>
+                                            <p class="font-body" id="pengantin-bride-fullname">Melwinda Eflin</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-wedding-gold text-xl flex-shrink-0"><span
+                                                class="material-symbols-outlined">groups</span></span>
+                                        <div>
+                                            <p class="font-display text-sm text-wedding-gold">Orang Tua</p>
+                                            <p class="font-body text-sm" id="pengantin-bride-parents">Bapak [Nama Ayah]
+                                                &amp; Ibu [Nama Ibu]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-wedding-gold text-xl flex-shrink-0"><span
+                                                class="material-symbols-outlined">location_on</span></span>
+                                        <div>
+                                            <p class="font-display text-sm text-wedding-gold">Asal</p>
+                                            <p class="font-body">Kota Sorong, Indonesia</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-wedding-gold text-xl flex-shrink-0"><span
+                                                class="material-symbols-outlined">work</span></span>
+                                        <div>
+                                            <p class="font-display text-sm text-wedding-gold">Profesi</p>
+                                            <p class="font-body">[Pekerjaan Mempelai Wanita]</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p
+                                    class="font-body wedding-dominikus-melwinda-text-secondary text-sm mt-6 leading-relaxed italic">
+                                    "Saya dipanggil untuk menjadi pendamping terbaik dan ibu yang penuh kasih sayang."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- ==================== --> <!-- KISAH CINTA          --> <!-- ==================== -->
+            <section id="kisah" class="wedding-dominikus-melwinda-section">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="wedding-dominikus-melwinda-section-title wedding-dominikus-melwinda-reveal">Kisah cinta
+                    </h2>
+                    <div class="wedding-dominikus-melwinda-timeline wedding-dominikus-melwinda-reveal">
+                        <!-- Perkenalan -->
+                        <div class="wedding-dominikus-melwinda-timeline-item">
+                            <h3 class="font-display text-xl text-wedding-gold mb-2"><span
+                                    class="material-symbols-outlined">
+                                    church
+                                </span> Awal Perjumpaan</h3>
+                            <p class="font-body wedding-dominikus-melwinda-text-secondary leading-relaxed">Perjalanan
+                                ini bermula dari sebuah perkenalan sederhana di media sosial, tepatnya melalui
+                                Instagram. Dari sapaan ringan dan percakapan yang tak disengaja, Tuhan perlahan menuntun
+                                langkah kami hingga akhirnya hati kami dipertemukan dalam keseriusan yang indah.</p>
+                        </div><!-- Pertunangan -->
+                        <div class="wedding-dominikus-melwinda-timeline-item">
+                            <h3 class="font-display text-xl text-wedding-gold mb-2"><span
+                                    class="material-symbols-outlined">
+                                    diamond
+                                </span> Bertunangan</h3>
+                            <p class="font-body wedding-dominikus-melwinda-text-secondary leading-relaxed">Setelah satu
+                                tahun menjalin kasih dan membangun komitmen, pada Natal 2026, kami memutuskan untuk
+                                bertunangan. Dengan restu kedua orang tua dan berkat dari Romo, kami bersiap melangkah
+                                ke jenjang yang lebih sakral.</p>
+                        </div><!-- Perjalanan Iman -->
+                        <div class="wedding-dominikus-melwinda-timeline-item">
+                            <h3 class="font-display text-xl text-wedding-gold mb-2"><span
+                                    class="material-symbols-outlined">
+                                    auto_awesome
+                                </span> Perjalanan Iman Bersama</h3>
+                            <p class="font-body wedding-dominikus-melwinda-text-secondary leading-relaxed">Bersama-sama
+                                kami bertumbuh dalam iman melalui doa harian, mengikuti Kursus Persiapan Perkawinan, dan
+                                aktif dalam kegiatan gereja. Kami percaya bahwa pernikahan adalah panggilan suci untuk
+                                saling menguduskan.</p>
+                        </div>
+                    </div><!-- Photo Slider -->
+                    <div class="mt-12 wedding-dominikus-melwinda-reveal">
+                        <div class="wedding-dominikus-melwinda-glass-card overflow-hidden mb-6">
+                            <div class="flex overflow-x-auto gap-4 pb-4 snap-x snap-mandatory"
+                                id="wedding-dominikus-melwinda-story-slider">
+                                <div class="flex-shrink-0 w-64 h-64 snap-center rounded-lg overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=400"
+                                        alt="Foto kenangan 1" class="w-full h-full object-cover" loading="lazy"
+                                        onerror="this.style.background='linear-gradient(135deg, #D4AF37, #C9A227)'; this.alt='Foto tidak tersedia';">
+                                </div>
+                                <div class="flex-shrink-0 w-64 h-64 snap-center rounded-lg overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=400"
+                                        alt="Foto kenangan 2" class="w-full h-full object-cover" loading="lazy"
+                                        onerror="this.style.background='linear-gradient(135deg, #D4AF37, #C9A227)'; this.alt='Foto tidak tersedia';">
+                                </div>
+                                <div class="flex-shrink-0 w-64 h-64 snap-center rounded-lg overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1529634597503-139d3726fed5?w=400"
+                                        alt="Foto kenangan 3" class="w-full h-full object-cover" loading="lazy"
+                                        onerror="this.style.background='linear-gradient(135deg, #D4AF37, #C9A227)'; this.alt='Foto tidak tersedia';">
+                                </div>
+                                <div class="flex-shrink-0 w-64 h-64 snap-center rounded-lg overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=400"
+                                        alt="Foto kenangan 4" class="w-full h-full object-cover" loading="lazy"
+                                        onerror="this.style.background='linear-gradient(135deg, #D4AF37, #C9A227)'; this.alt='Foto tidak tersedia';">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="wedding-dominikus-melwinda-btn w-full flex items-center justify-center gap-2"
+                            id="wedding-dominikus-melwinda-slideshow-btn">
+                            <span class="material-symbols-outlined material-symbols-outlined-movie">
+                                movie
+                            </span>
+                            Tonton Perjalanan
+                        </button>
+                    </div><!-- Fun Poll -->
+                    <div class="wedding-dominikus-melwinda-glass-card mt-8">
+                        <h3 class="font-display text-lg text-wedding-gold mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined">
+                                poll
+                            </span>
+                            Fun Poll
+                        </h3>
+                        <p class="font-body wedding-dominikus-melwinda-text-secondary mb-4">Siapa yang lebih dulu
+                            menyatakan cinta?</p>
+                        <div class="space-y-3">
+                            <div>
+                                <div class="flex justify-between mb-1"><span
+                                        class="font-body text-sm">Dominikus</span><span
+                                        class="font-body text-sm text-wedding-gold"
+                                        id="wedding-dominikus-melwinda-poll-vote-1">0%</span>
+                                </div>
+                                <div class="wedding-dominikus-melwinda-poll-bar">
+                                    <div class="wedding-dominikus-melwinda-poll-fill"
+                                        id="wedding-dominikus-melwinda-poll-bar-1" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1"><span
+                                        class="font-body text-sm">Melwinda</span><span
+                                        class="font-body text-sm text-wedding-gold"
+                                        id="wedding-dominikus-melwinda-poll-vote-2">0%</span>
+                                </div>
+                                <div class="wedding-dominikus-melwinda-poll-bar">
+                                    <div class="wedding-dominikus-melwinda-poll-fill"
+                                        id="wedding-dominikus-melwinda-poll-bar-2" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1"><span class="font-body text-sm">Sama-sama
+                                        (bersamaan)</span><span class="font-body text-sm text-wedding-gold"
+                                        id="wedding-dominikus-melwinda-poll-vote-3">0%</span>
+                                </div>
+                                <div class="wedding-dominikus-melwinda-poll-bar">
+                                    <div class="wedding-dominikus-melwinda-poll-fill"
+                                        id="wedding-dominikus-melwinda-poll-bar-3" style="width: 0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3 mt-4">
+
+                            <!-- Baris Atas: 2 Tombol -->
+                            <div class="grid grid-cols-2 gap-2">
+                                <button
+                                    class="wedding-dominikus-melwinda-btn wedding-dominikus-melwinda-poll-button w-full flex items-center justify-center text-center"
+                                    onclick="weddingDominikusMelwinda.votePoll('dominikus')">
+                                    Dominikus
+                                </button>
+
+                                <button
+                                    class="wedding-dominikus-melwinda-btn wedding-dominikus-melwinda-poll-button w-full flex items-center justify-center text-center"
+                                    onclick="weddingDominikusMelwinda.votePoll('melwinda')">
+                                    Melwinda
+                                </button>
+                            </div>
+                            <!-- Baris Bawah: 1 Tombol -->
+                            <div>
+                                <button
+                                    class="wedding-dominikus-melwinda-btn wedding-dominikus-melwinda-poll-button w-full"
+                                    onclick="weddingDominikusMelwinda.votePoll('sama')">
+                                    Sama-sama
+                                </button>
+                            </div>
+
+                        </div>
+                    </div><!-- Virtual Candle -->
+                    <div class="wedding-dominikus-melwinda-glass-card mt-8 text-center">
+                        <h3 class="font-display text-lg text-wedding-gold mb-4">🕯️ Nyalakan Lilin untuk Kami</h3>
+                        <p class="font-body wedding-dominikus-melwinda-text-secondary mb-6">Berikan doa dan berkah Anda
+                            dengan menyalakan lilin virtual. Setiap lilin yang menyala adalah bukti kasih sayang Anda
+                            untuk kami.</p>
+                        <div class="flex justify-center gap-6 flex-wrap mb-6">
+
+                            <!-- Lilin 1 -->
+                            <div class="wedding-dominikus-melwinda-candle text-center">
+                                <div class="relative mx-auto mb-2 w-16 h-24 flex items-end justify-center">
+
+                                    <!-- Body Lilin -->
+                                    <div
+                                        class="w-12 h-20 bg-gradient-to-b from-yellow-100 to-yellow-300 rounded-t-lg rounded-b-md relative shadow-md">
+
+                                        <!-- Sumbu -->
+                                        <div
+                                            class="absolute -top-3 left-1/2 w-1 h-3 bg-gray-800 rounded-full transform -translate-x-1/2">
+                                        </div>
+
+                                        <!-- Api -->
+                                        <div class="wedding-dominikus-melwinda-candle-flame"
+                                            id="wedding-dominikus-melwinda-candle-1"></div>
+                                    </div>
+
+                                </div>
+                                <p class="font-body text-xs">Lilin 1</p>
+                            </div>
+
+                            <!-- Lilin 2 -->
+                            <div class="wedding-dominikus-melwinda-candle text-center">
+                                <div class="relative mx-auto mb-2 w-16 h-24 flex items-end justify-center">
+
+                                    <div
+                                        class="w-12 h-20 bg-gradient-to-b from-yellow-100 to-yellow-300 rounded-t-lg rounded-b-md relative shadow-md">
+
+                                        <div
+                                            class="absolute -top-3 left-1/2 w-1 h-3 bg-gray-800 rounded-full transform -translate-x-1/2">
+                                        </div>
+
+                                        <div class="wedding-dominikus-melwinda-candle-flame"
+                                            id="wedding-dominikus-melwinda-candle-2"></div>
+                                    </div>
+
+                                </div>
+                                <p class="font-body text-xs">Lilin 2</p>
+                            </div>
+
+                            <!-- Lilin 3 -->
+                            <div class="wedding-dominikus-melwinda-candle text-center">
+                                <div class="relative mx-auto mb-2 w-16 h-24 flex items-end justify-center">
+
+                                    <div
+                                        class="w-12 h-20 bg-gradient-to-b from-yellow-100 to-yellow-300 rounded-t-lg rounded-b-md relative shadow-md">
+
+                                        <div
+                                            class="absolute -top-3 left-1/2 w-1 h-3 bg-gray-800 rounded-full transform -translate-x-1/2">
+                                        </div>
+
+                                        <div class="wedding-dominikus-melwinda-candle-flame"
+                                            id="wedding-dominikus-melwinda-candle-3"></div>
+                                    </div>
+
+                                </div>
+                                <p class="font-body text-xs">Lilin 3</p>
+                            </div>
+
+                        </div>
+                        <button class="wedding-dominikus-melwinda-btn"
+                            id="wedding-dominikus-melwinda-light-candle-btn">Nyalakan Lilin</button>
+                        <p class="font-body text-sm text-wedding-gold mt-4"
+                            id="wedding-dominikus-melwinda-candle-count">Lilin Doa: 0</p>
+                    </div>
+                </div>
+            </section><!-- ==================== --> <!-- NILAI KELUARGA       --> <!-- ==================== -->
+            <section id="nilai" class="wedding-dominikus-melwinda-section"
+                style="background: var(--wedding-bg-secondary);">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="wedding-dominikus-melwinda-section-title wedding-dominikus-melwinda-reveal">Janji Kami
+                        Dalam Kristus</h2>
+                    <div class="wedding-dominikus-melwinda-promise wedding-dominikus-melwinda-reveal">
+                        <div class="wedding-dominikus-melwinda-promise-title">
+                            Nilai-Nilai Keluarga Kami
+                        </div>
+                        <div class="wedding-dominikus-melwinda-promise-list">
+
+                            <div class="wedding-dominikus-melwinda-promise-item">
+                                <span class="wedding-dominikus-melwinda-promise-bullet">
+                                    <span class="material-symbols-outlined">favorite</span>
+                                </span>
+                                <span>Kami akan saling menguatkan dalam setiap tantangan kehidupan, baik dalam masa
+                                    penuh sukacita maupun saat menghadapi pencobaan.</span>
+                            </div>
+
+                            <div class="wedding-dominikus-melwinda-promise-item">
+                                <span class="wedding-dominikus-melwinda-promise-bullet">
+                                    <span class="material-symbols-outlined">church</span>
+                                </span>
+                                <span>Kami akan membangun keluarga yang kokoh dalam iman, menjadikan Kristus sebagai
+                                    pusat dan dasar setiap keputusan kami.</span>
+                            </div>
+
+                            <div class="wedding-dominikus-melwinda-promise-item">
+                                <span class="wedding-dominikus-melwinda-promise-bullet">
+                                    <span class="material-symbols-outlined">handshake</span>
+                                </span>
+                                <span>Kami akan setia dalam suka dan duka, dalam kelimpahan maupun kekurangan, hingga
+                                    akhir hayat memisahkan kami.</span>
+                            </div>
+
+                            <div class="wedding-dominikus-melwinda-promise-item">
+                                <span class="wedding-dominikus-melwinda-promise-bullet">
+                                    <span class="material-symbols-outlined">volunteer_activism</span>
+                                </span>
+                                <span>Kami akan melayani satu sama lain dengan hati yang tulus dan penuh kasih, sebagai
+                                    wujud nyata dari cinta yang Tuhan anugerahkan.</span>
+                            </div>
+
+                            <div class="wedding-dominikus-melwinda-promise-item">
+                                <span class="wedding-dominikus-melwinda-promise-bullet">
+                                    <span class="material-symbols-outlined">diversity_3</span>
+                                </span>
+                                <span>Kami akan membesarkan keluarga dalam semangat persatuan, saling menghormati, dan
+                                    mendidik anak-anak kami dalam nilai Kristiani.</span>
+                            </div>
+
+                            <div class="wedding-dominikus-melwinda-promise-item">
+                                <span class="wedding-dominikus-melwinda-promise-bullet">
+                                    <span class="material-symbols-outlined">auto_awesome</span>
+                                </span>
+                                <span>Kami akan menjaga kekudusan pernikahan ini sebagai panggilan hidup yang suci dan
+                                    tak tergantikan.</span>
+                            </div>
+
+                            <div class="wedding-dominikus-melwinda-promise-item">
+                                <span class="wedding-dominikus-melwinda-promise-bullet">
+                                    <span class="material-symbols-outlined">light_mode</span>
+                                </span>
+                                <span>Kami akan menjadi terang bagi sesama, menghadirkan kasih dan pengharapan dalam
+                                    lingkungan keluarga maupun masyarakat.</span>
+                            </div>
+
+                            <div class="wedding-dominikus-melwinda-promise-item">
+                                <span class="wedding-dominikus-melwinda-promise-bullet">
+                                    <span class="material-symbols-outlined">all_inclusive</span>
+                                </span>
+                                <span>Kami akan terus bertumbuh bersama dalam doa, pengampunan, dan kesabaran, agar
+                                    cinta ini semakin dewasa dari waktu ke waktu.</span>
+                            </div>
+
+                        </div>
+                    </div><!-- Additional Values Grid -->
+                    <div class="grid md:grid-cols-2 gap-4 mt-8">
+
+                        <div class="wedding-dominikus-melwinda-glass-card wedding-dominikus-melwinda-reveal">
+                            <h3 class="font-display text-lg text-wedding-gold mb-3 flex items-center gap-2">
+                                <span class="material-symbols-outlined">auto_awesome</span>
+                                Iman
+                            </h3>
+                            <p class="font-body wedding-dominikus-melwinda-text-secondary">
+                                Fondasi kehidupan kami adalah kepercayaan yang teguh kepada Tuhan Yesus Kristus dan
+                                Gereja Katolik yang kudus.
+                                Dalam setiap langkah perjalanan rumah tangga ini, kami menjadikan iman sebagai terang
+                                yang membimbing,
+                                menguatkan, dan menyempurnakan kasih kami.
+                            </p>
+                        </div>
+
+                        <div class="wedding-dominikus-melwinda-glass-card wedding-dominikus-melwinda-reveal">
+                            <h3 class="font-display text-lg text-wedding-gold mb-3 flex items-center gap-2">
+                                <span class="material-symbols-outlined">handshake</span>
+                                Kesetiaan
+                            </h3>
+                            <p class="font-body wedding-dominikus-melwinda-text-secondary">
+                                Komitmen kami satu sama lain adalah janji sakral yang diikrarkan di hadapan Tuhan dan
+                                umat-Nya.
+                                Dalam suka maupun duka, kami memilih untuk tetap setia, menjaga kepercayaan, dan saling
+                                menguatkan tanpa syarat.
+                            </p>
+                        </div>
+
+                        <div class="wedding-dominikus-melwinda-glass-card wedding-dominikus-melwinda-reveal">
+                            <h3 class="font-display text-lg text-wedding-gold mb-3 flex items-center gap-2">
+                                <span class="material-symbols-outlined">volunteer_activism</span>
+                                Pengabdian
+                            </h3>
+                            <p class="font-body wedding-dominikus-melwinda-text-secondary">
+                                Kami mendedikasikan hidup kami untuk melayani Tuhan dan sesama dengan hati yang tulus.
+                                Pengabdian ini menjadi wujud nyata rasa syukur atas rahmat yang telah menyatukan kami
+                                dalam cinta.
+                            </p>
+                        </div>
+
+                        <div class="wedding-dominikus-melwinda-glass-card wedding-dominikus-melwinda-reveal">
+                            <h3 class="font-display text-lg text-wedding-gold mb-3 flex items-center gap-2">
+                                <span class="material-symbols-outlined">favorite</span>
+                                Pelayanan
+                            </h3>
+                            <p class="font-body wedding-dominikus-melwinda-text-secondary">
+                                Melalui pelayanan bersama, kami bertumbuh semakin dekat kepada Kristus dan umat-Nya.
+                                Kami percaya bahwa cinta sejati diwujudkan dalam tindakan nyata yang membawa terang dan
+                                pengharapan.
+                            </p>
+                        </div>
+
+                        <div class="wedding-dominikus-melwinda-glass-card wedding-dominikus-melwinda-reveal">
+                            <h3 class="font-display text-lg text-wedding-gold mb-3 flex items-center gap-2">
+                                <span class="material-symbols-outlined">diversity_3</span>
+                                Persatuan
+                            </h3>
+                            <p class="font-body wedding-dominikus-melwinda-text-secondary">
+                                Kami berkomitmen membangun keluarga yang dipenuhi semangat persatuan, saling
+                                menghormati,
+                                dan menjadikan komunikasi sebagai jembatan dalam setiap perbedaan.
+                            </p>
+                        </div>
+
+                        <div class="wedding-dominikus-melwinda-glass-card wedding-dominikus-melwinda-reveal">
+                            <h3 class="font-display text-lg text-wedding-gold mb-3 flex items-center gap-2">
+                                <span class="material-symbols-outlined">light_mode</span>
+                                Harapan
+                            </h3>
+                            <p class="font-body wedding-dominikus-melwinda-text-secondary">
+                                Dalam setiap musim kehidupan, kami memelihara harapan yang teguh bahwa Tuhan selalu
+                                menyertai.
+                                Harapan ini menjadi kekuatan yang menuntun kami menuju masa depan yang penuh berkat.
+                            </p>
+                        </div>
+
+                        <div class="wedding-dominikus-melwinda-glass-card wedding-dominikus-melwinda-reveal">
+                            <h3 class="font-display text-lg text-wedding-gold mb-3 flex items-center gap-2">
+                                <span class="material-symbols-outlined">all_inclusive</span>
+                                Pertumbuhan
+                            </h3>
+                            <p class="font-body wedding-dominikus-melwinda-text-secondary">
+                                Kami berjanji untuk terus bertumbuh bersama dalam doa, pengampunan, kesabaran, dan
+                                kasih.
+                                Setiap hari adalah kesempatan untuk menjadi pasangan yang lebih dewasa dan semakin
+                                serupa dengan Kristus.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </section><!-- ==================== --> <!-- SAKRAMEN & RESEPSI   --> <!-- ==================== -->
+            <section id="sakramen" class="wedding-dominikus-melwinda-section"
+                style="background: var(--wedding-bg-secondary);">
+                <div class="max-w-5xl mx-auto">
+                    <h2 class="wedding-dominikus-melwinda-section-title wedding-dominikus-melwinda-reveal">Sakramen
+                        Perkawinan</h2>
+                    <div class="grid md:grid-cols-2 gap-8"><!-- Misa Pemberkatan -->
+                        <div class="wedding-dominikus-melwinda-glass-card wedding-dominikus-melwinda-reveal">
+                            <div class="text-center">
+                                <div
+                                    class="w-16 h-16 mx-auto mb-4 rounded-full bg-wedding-gold/10 flex items-center justify-center">
+                                    <svg class="w-8 h-8 text-wedding-gold" fill="currentColor" viewbox="0 0 24 24">
+                                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                                    </svg>
+                                </div>
+                                <h3 class="font-display text-xl text-wedding-gold mb-4">Misa Pemberkatan Perkawinan</h3>
+                                <div class="wedding-dominikus-melwinda-ornament"></div>
+                                <p class="font-body text-lg mb-2" id="wedding-dominikus-melwinda-church-name">Gereja
+                                    Katolik Santo Yohanes Pemandi, Janti</p>
+                                <p class="font-body wedding-dominikus-melwinda-text-secondary mb-4">Jl. Keben Surya
+                                    Timur No. 9 (Janti), Malang, Jawa Timur, Indonesia.</p>
+                                <div class="bg-wedding-gold/10 rounded-lg p-4 mb-4">
+                                    <p class="font-display text-wedding-gold">Sabtu, 02 Oktober 2027</p>
+                                    <p class="font-body text-2xl font-semibold">09:00 WIB</p>
+                                </div>
+                                <p class="font-body wedding-dominikus-melwinda-text-secondary text-sm mb-4"><strong>Romo
+                                        Selebran:</strong><br><span id="wedding-dominikus-melwinda-priest-name">RD.
+                                        Stephanus Jemmy Fantaw </span></p><!-- Susunan Liturgi -->
+                                <details class="text-left mt-4">
+                                    <summary class="font-display text-sm cursor-pointer text-wedding-gold">Susunan
+                                        Liturgi</summary>
+                                    <ul
+                                        class="font-body text-sm wedding-dominikus-melwinda-text-secondary mt-2 space-y-1">
+                                        <li>• Perarakan Masuk</li>
+                                        <li>• Liturgi Sabda</li>
+                                        <li>• Liturgi Perkawinan</li>
+                                        <li>• Liturgi Ekaristi</li>
+                                        <li>• Berkat Pernikahan</li>
+                                        <li>• Perarakan Keluar</li>
+                                    </ul>
+                                </details><a href="https://maps.app.goo.gl/rT2fx5gMFUAD8r9F8" target="_blank"
+                                    rel="noopener noreferrer" class="wedding-dominikus-melwinda-btn inline-block mt-6">
+                                    Petunjuk Arah </a>
+                            </div>
+                        </div><!-- Resepsi -->
+                        <div class="wedding-dominikus-melwinda-glass-card wedding-dominikus-melwinda-reveal">
+                            <div class="text-center">
+                                <div
+                                    class="w-16 h-16 mx-auto mb-4 rounded-full bg-wedding-gold/10 flex items-center justify-center">
+                                    <svg class="w-8 h-8 text-wedding-gold" fill="currentColor" viewbox="0 0 24 24">
+                                        <path
+                                            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                    </svg>
+                                </div>
+                                <h3 class="font-display text-xl text-wedding-gold mb-4">Resepsi Pernikahan</h3>
+                                <div class="wedding-dominikus-melwinda-ornament"></div>
+                                <p class="font-body text-lg mb-2">Rumah Mempelai Pria</p>
+                                <p class="font-body wedding-dominikus-melwinda-text-secondary mb-4">Gg. Dr. Soetomo
+                                    No.45, Bandungrejosari, Kec. Sukun, Kota Malang, Jawa Timur 65148</p>
+                                <div class="bg-wedding-gold/10 rounded-lg p-4 mb-4">
+                                    <p class="font-display text-wedding-gold">Sabtu, 02 Oktober 2027</p>
+                                    <p class="font-body text-2xl font-semibold">12:00 - 15:00 WIB</p>
+                                </div><!-- Dress Code -->
+                                <div class="bg-wedding-gold/5 rounded-lg p-4 mb-4">
+                                    <p class="font-display text-sm text-wedding-gold mb-2">Dress Code</p>
+                                    <p class="font-body wedding-dominikus-melwinda-text-secondary"><strong>Formal
+                                            Elegant</strong><br>
+                                        Warna: Gold, Champagne, Navy</p>
+                                </div><a href="https://maps.app.goo.gl/pzXHJxG1sjfMsijv9" target="_blank"
+                                    rel="noopener noreferrer" class="wedding-dominikus-melwinda-btn inline-block mt-2">
+                                    Petunjuk Arah </a>
+                            </div>
+                        </div>
+                    </div><!-- Google Maps Embed -->
+                    <div class="mt-8 wedding-dominikus-melwinda-reveal">
+                        <div class="wedding-dominikus-melwinda-glass-card p-0 overflow-hidden">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d987.7470538578698!2d112.60627126945735!3d-8.000151399501597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7882b26ea25dab%3A0xeb1abebe6e7e06e3!2sGg.%20Dr.%20Soetomo%20No.45%2C%20Bandungrejosari%2C%20Kec.%20Sukun%2C%20Kota%20Malang%2C%20Jawa%20Timur%2065148!5e0!3m2!1sid!2sid!4v1772447433695!5m2!1sid!2sid"
+                                width="100%" height="300" style="border:0;" allowfullscreen loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade" title="Lokasi Pernikahan"
+                                aria-label="Peta lokasi pernikahan"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- ==================== --> <!-- GALERI               --> <!-- ==================== -->
+            <section id="galeri" class="wedding-dominikus-melwinda-section">
+                <div class="max-w-5xl mx-auto">
+                    <h2 class="wedding-dominikus-melwinda-section-title wedding-dominikus-melwinda-reveal">Galeri Foto
+                    </h2>
+                    <div class="wedding-dominikus-melwinda-gallery wedding-dominikus-melwinda-reveal">
+                        <div class="wedding-dominikus-melwinda-gallery-item"
+                            data-src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800"><img
+                                src="https://images.unsplash.com/photo-1519741497674-611481863552?w=400"
+                                alt="Foto prewedding 1" loading="lazy"
+                                onerror="this.style.background='linear-gradient(135deg, #D4AF37, #C9A227)'; this.alt='Foto tidak tersedia';">
+                        </div>
+                        <div class="wedding-dominikus-melwinda-gallery-item"
+                            data-src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=800"><img
+                                src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=400"
+                                alt="Foto prewedding 2" loading="lazy"
+                                onerror="this.style.background='linear-gradient(135deg, #D4AF37, #C9A227)'; this.alt='Foto tidak tersedia';">
+                        </div>
+                        <div class="wedding-dominikus-melwinda-gallery-item"
+                            data-src="https://images.unsplash.com/photo-1529634597503-139d3726fed5?w=800"><img
+                                src="https://images.unsplash.com/photo-1529634597503-139d3726fed5?w=400"
+                                alt="Foto prewedding 3" loading="lazy"
+                                onerror="this.style.background='linear-gradient(135deg, #D4AF37, #C9A227)'; this.alt='Foto tidak tersedia';">
+                        </div>
+                        <div class="wedding-dominikus-melwinda-gallery-item"
+                            data-src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=800"><img
+                                src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=400"
+                                alt="Foto prewedding 4" loading="lazy"
+                                onerror="this.style.background='linear-gradient(135deg, #D4AF37, #C9A227)'; this.alt='Foto tidak tersedia';">
+                        </div>
+                        <div class="wedding-dominikus-melwinda-gallery-item"
+                            data-src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=800"><img
+                                src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=400"
+                                alt="Foto prewedding 5" loading="lazy"
+                                onerror="this.style.background='linear-gradient(135deg, #D4AF37, #C9A227)'; this.alt='Foto tidak tersedia';">
+                        </div>
+                        <div class="wedding-dominikus-melwinda-gallery-item"
+                            data-src="https://images.unsplash.com/photo-1460978812857-470ed1c77af0?w=800"><img
+                                src="https://images.unsplash.com/photo-1460978812857-470ed1c77af0?w=400"
+                                alt="Foto prewedding 6" loading="lazy"
+                                onerror="this.style.background='linear-gradient(135deg, #D4AF37, #C9A227)'; this.alt='Foto tidak tersedia';">
+                        </div>
+                    </div>
+                </div>
+            </section><!-- Lightbox -->
+            <div class="wedding-dominikus-melwinda-lightbox" id="wedding-dominikus-melwinda-lightbox" role="dialog"
+                aria-label="Tampilan foto besar"><button class="absolute top-4 right-4 text-white text-4xl"
+                    id="wedding-dominikus-melwinda-close-lightbox" aria-label="Tutup tampilan foto">×</button> <img
+                    src="" alt="Foto besar" id="wedding-dominikus-melwinda-lightbox-img">
+            </div><!-- Slideshow Modal -->
+            <div class="wedding-dominikus-melwinda-slideshow-modal" id="wedding-dominikus-melwinda-slideshow-modal">
+                <div class="wedding-dominikus-melwinda-slideshow-container">
+                    <button class="wedding-dominikus-melwinda-slideshow-close"
+                        id="wedding-dominikus-melwinda-slideshow-close">×</button>
+                    <div class="wedding-dominikus-melwinda-slideshow-counter"
+                        id="wedding-dominikus-melwinda-slideshow-counter">
+                        1 / 4
+                    </div><img src="" alt="Slideshow image" id="wedding-dominikus-melwinda-slideshow-image"
+                        class="wedding-dominikus-melwinda-slideshow-image">
+                </div>
+            </div><!-- ==================== --> <!-- RSVP                 --> <!-- ==================== -->
+            <section id="rsvp" class="wedding-dominikus-melwinda-section"
+                style="background: var(--wedding-bg-secondary);">
+                <div class="max-w-2xl mx-auto">
+                    <h2 class="wedding-dominikus-melwinda-section-title wedding-dominikus-melwinda-reveal">Konfirmasi
+                        Kehadiran</h2><!-- Privacy Notice -->
+                    <div
+                        class="bg-wedding-gold/5 border border-wedding-gold/20 rounded-lg p-4 mb-6 wedding-dominikus-melwinda-reveal">
+                        <p class="font-body text-sm wedding-dominikus-melwinda-text-secondary text-center"><span
+                                class="material-symbols-outlined text-wedding-gold">lock</span> Pesan kehadiran tidak
+                            ditampilkan dan disimpan sebagai dokumentasi pribadi kedua mempelai.</p>
+                    </div>
+                    <div class="wedding-dominikus-melwinda-glass-card wedding-dominikus-melwinda-reveal">
+                        <form id="wedding-dominikus-melwinda-rsvp-form" class="space-y-6">
+                            <div>
+                                <label for="wedding-dominikus-melwinda-guest-name"
+                                    class="block font-display text-sm mb-2">Nama Lengkap *</label> <input type="text"
+                                    id="wedding-dominikus-melwinda-guest-name" class="wedding-dominikus-melwinda-input"
+                                    placeholder="Masukkan nama lengkap Anda" required aria-required="true">
+                            </div>
+                            <div>
+                                <label for="wedding-dominikus-melwinda-guest-count"
+                                    class="block font-display text-sm mb-2">Jumlah Tamu *</label> <select
+                                    id="wedding-dominikus-melwinda-guest-count" class="wedding-dominikus-melwinda-input"
+                                    required aria-required="true">
+                                    <option value="">Pilih jumlah tamu</option>
+                                    <option value="1">1 Orang</option>
+                                    <option value="2">2 Orang</option>
+                                    <option value="3">3 Orang</option>
+                                    <option value="4">4 Orang</option>
+                                    <option value="5">5 Orang</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block font-display text-sm mb-2">Konfirmasi Kehadiran *</label>
+                                <div class="flex gap-6 mb-3">
+                                    <label class="flex items-center gap-2 cursor-pointer"> <input type="radio"
+                                            name="attendance" value="hadir" class="w-4 h-4 accent-wedding-gold"
+                                            required> <span class="font-body font-semibold text-wedding-gold">H</span>
+                                    </label> <label class="flex items-center gap-2 cursor-pointer"> <input type="radio"
+                                            name="attendance" value="tidak_hadir" class="w-4 h-4 accent-wedding-gold">
+                                        <span class="font-body font-semibold text-wedding-gold">TH</span> </label>
+                                    <label class="flex items-center gap-2 cursor-pointer"> <input type="radio"
+                                            name="attendance" value="belum_pasti" class="w-4 h-4 accent-wedding-gold">
+                                        <span class="font-body font-semibold text-wedding-gold">BP</span> </label>
+                                </div>
+                                <div class="flex flex-col gap-2 text-xs wedding-dominikus-melwinda-text-secondary">
+                                    <div class="flex gap-2">
+                                        <span class="font-semibold text-wedding-gold min-w-6">H:</span>
+                                        <span>Hadir</span>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <span class="font-semibold text-wedding-gold min-w-6">TH:</span> <span>Tidak
+                                            Hadir</span>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <span class="font-semibold text-wedding-gold min-w-6">BP:</span> <span>Belum
+                                            Pasti</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="wedding-dominikus-melwinda-message"
+                                    class="block font-display text-sm mb-2">Ucapan &amp; Doa</label> <textarea
+                                    id="wedding-dominikus-melwinda-message" class="wedding-dominikus-melwinda-input"
+                                    rows="4" placeholder="Tuliskan ucapan dan doa untuk kedua mempelai..."></textarea>
+                            </div><button type="submit" class="wedding-dominikus-melwinda-btn w-full"
+                                id="wedding-dominikus-melwinda-submit-btn"> <span
+                                    id="wedding-dominikus-melwinda-btn-text">Kirim Konfirmasi</span> <span
+                                    id="wedding-dominikus-melwinda-btn-loading" class="hidden">Mengirim...</span>
+                            </button>
+                        </form>
+                    </div><!-- Ucapan Section -->
+                    <div class="mt-12 wedding-dominikus-melwinda-reveal">
+                        <h3 class="font-display text-xl text-center text-wedding-gold mb-6">Ucapan &amp; Doa dari Tamu
+                        </h3>
+                        <div id="wedding-dominikus-melwinda-messages" class="space-y-4 max-h-96 overflow-y-auto">
+                            <!-- Pesan akan ditampilkan di sini -->
+                            <p class="text-center wedding-dominikus-melwinda-text-secondary font-body"
+                                id="wedding-dominikus-melwinda-no-messages">Pesan kehadiran bersifat pribadi dan tidak
+                                ditampilkan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- ==================== --> <!-- HADIAH               --> <!-- ==================== -->
+            <section id="hadiah" class="wedding-dominikus-melwinda-section">
+                <div class="max-w-2xl mx-auto">
+                    <h2 class="wedding-dominikus-melwinda-section-title wedding-dominikus-melwinda-reveal">Hadiah
+                        Pernikahan</h2>
+                    <p
+                        class="text-center font-body wedding-dominikus-melwinda-text-secondary mb-8 wedding-dominikus-melwinda-reveal">
+                        Kehadiran dan doa restu Bapak/Ibu/Saudara/i merupakan hadiah terindah bagi kami. Namun jika
+                        berkenan memberikan tanda kasih, dapat melalui:</p>
+                    <div class="grid md:grid-cols-2 gap-6 wedding-dominikus-melwinda-reveal"><!-- BCA -->
+                        <div class="wedding-dominikus-melwinda-glass-card text-center">
+                            <div class="mb-4">
+                                <img src="https://www.bca.co.id/content/dam/bca-corporate/images/bca-header-logo.png"
+                                    alt="Logo BCA" class="h-12 mx-auto mb-4" loading="lazy"
+                                    onerror="this.style.display='none';">
+                                <svg class="w-12 h-12 mx-auto text-wedding-gold" fill="currentColor"
+                                    viewbox="0 0 24 24">
+                                    <path
+                                        d="M5 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2H5zm0 2h14v18H5V3zm3 4h8v2H8V7zm0 3h8v2H8v-2zm0 3h5v2H8v-2z" />
+                                </svg>
+                            </div>
+                            <p class="font-display text-wedding-gold mb-2">Bank BCA</p>
+                            <p class="font-body mb-1">Dominikus Triuspa M.</p>
+                            <div class="flex items-center justify-center gap-2"><code
+                                    class="bg-wedding-gold/10 px-3 py-2 rounded font-mono text-sm break-all"
+                                    id="wedding-dominikus-melwinda-bca">1234567890</code> <button
+                                    onclick="weddingDominikusMelwinda.copyAccount('bca')"
+                                    class="text-wedding-gold hover:text-wedding-accent transition-colors flex-shrink-0"
+                                    aria-label="Salin nomor rekening BCA" title="Salin nomor rekening">
+                                    <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+                                        <path
+                                            d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                                    </svg></button>
+                            </div>
+                        </div><!-- Mandiri -->
+                        <div class="wedding-dominikus-melwinda-glass-card text-center">
+                            <div class="mb-4">
+                                <img src="https://www.bankmandiri.co.id/resource/images/header-logo.svg"
+                                    alt="Logo Mandiri" class="h-12 mx-auto mb-4" loading="lazy"
+                                    onerror="this.style.display='none';">
+                                <svg class="w-12 h-12 mx-auto text-wedding-gold" fill="currentColor"
+                                    viewbox="0 0 24 24">
+                                    <path
+                                        d="M5 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2H5zm0 2h14v18H5V3zm3 4h8v2H8V7zm0 3h8v2H8v-2zm0 3h5v2H8v-2z" />
+                                </svg>
+                            </div>
+                            <p class="font-display text-wedding-gold mb-2">Bank Mandiri</p>
+                            <p class="font-body mb-1">Melwinda Eflin</p>
+                            <div class="flex items-center justify-center gap-2"><code
+                                    class="bg-wedding-gold/10 px-3 py-2 rounded font-mono text-sm break-all"
+                                    id="wedding-dominikus-melwinda-mandiri">0987654321</code> <button
+                                    onclick="weddingDominikusMelwinda.copyAccount('mandiri')"
+                                    class="text-wedding-gold hover:text-wedding-accent transition-colors flex-shrink-0"
+                                    aria-label="Salin nomor rekening Mandiri" title="Salin nomor rekening">
+                                    <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+                                        <path
+                                            d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                    </div>
+                    <p
+                        class="text-center font-body wedding-dominikus-melwinda-text-secondary mt-8 wedding-dominikus-melwinda-reveal flex items-center justify-center gap-2">
+
+                        <span class="material-symbols-outlined text-wedding-gold">church</span>
+
+                        Terima kasih atas segala doa, perhatian, dan berkat yang telah Anda berikan kepada kami.
+                        Kehadiran serta dukungan Anda menjadi anugerah yang sangat berarti dalam perjalanan suci kami
+                        menuju kehidupan pernikahan.
+
+                        <span class="material-symbols-outlined text-wedding-gold">church</span>
+
+                    </p>
+                </div>
+            </section><!-- ==================== --> <!-- PENUTUP              --> <!-- ==================== -->
+            <section class="wedding-dominikus-melwinda-section text-center"
+                style="background: linear-gradient(135deg, var(--wedding-bg-secondary), var(--wedding-bg-primary));"
+                id="penutup">
+                <div class="max-w-2xl mx-auto wedding-dominikus-melwinda-reveal">
+                    <div class="font-script text-4xl text-wedding-gold mb-6"
+                        id="wedding-dominikus-melwinda-closing-text">
+                        Doa Kami
+                    </div>
+                    <blockquote
+                        class="font-body text-lg italic wedding-dominikus-melwinda-text-secondary mb-8 leading-relaxed">
+                        "Ya Tuhan, berkati keluarga baru ini. Jadikan rumah tangga kami tempat di mana cinta-Mu
+                        bersemayam, di mana damai-Mu bertakhta, dan di mana sukacita-Mu melimpah. Amin."
+                    </blockquote>
+                    <div class="wedding-dominikus-melwinda-ornament"></div>
+                    <blockquote class="font-body italic wedding-dominikus-melwinda-text-secondary mb-8">
+                        "Berbahagialah setiap orang yang takut akan Tuhan, yang hidup menurut jalan yang
+                        ditunjukkan-Nya!" <cite class="block mt-2 not-italic text-wedding-gold">— Mazmur 128:1</cite>
+                    </blockquote>
+                    <p class="font-body wedding-dominikus-melwinda-text-secondary mb-4">Merupakan suatu kehormatan dan
+                        kebahagiaan bagi kami<br>
+                        apabila Bapak/Ibu/Saudara/i berkenan hadir<br>
+                        untuk memberikan doa restu kepada kami.</p>
+                    <p class="font-display text-wedding-gold text-xl mt-8">Atas kehadiran dan doa restunya,<br>
+                        kami mengucapkan terima kasih.</p>
+                    <div class="font-script text-5xl text-wedding-gold mt-8">
+                        Dominikus &amp; Melwinda
+                    </div>
+                </div>
+            </section><!-- Footer -->
+            <footer class="py-8 text-center" style="background: var(--wedding-bg-secondary);">
+                <div class="flex items-center justify-center gap-2 mb-4"><span
+                        class="text-wedding-gold text-2xl">✝</span>
+                </div>
+                <p class="font-body wedding-dominikus-melwinda-text-secondary text-sm">© 2026 Dominikus &amp; Melwinda
+                </p>
+                <p class="font-body wedding-dominikus-melwinda-text-secondary text-xs mt-2">Dibuat dengan ❤️ dan Iman
+                </p>
+            </footer>
+        </main><!-- Fixed Buttons --> <!-- Theme Toggle --> <button class="wedding-dominikus-melwinda-theme-toggle"
+            id="wedding-dominikus-melwinda-theme-btn" aria-label="Ganti tema warna"> <span
+                id="wedding-dominikus-melwinda-theme-icon">🌙</span> </button> <!-- Music Control --> <button
+            class="wedding-dominikus-melwinda-music-btn" id="wedding-dominikus-melwinda-music-btn"
+            aria-label="Kontrol musik"> <span id="wedding-dominikus-melwinda-music-icon">🎵</span> </button>
+        <!-- Scroll to Top --> <button class="wedding-dominikus-melwinda-scroll-top"
+            id="wedding-dominikus-melwinda-scroll-top" aria-label="Kembali ke atas">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"
+                style="color: var(--wedding-gold);">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+            </svg></button>
+    </div><!-- Toast Notification -->
+    <div class="wedding-dominikus-melwinda-toast" id="wedding-dominikus-melwinda-toast" role="alert" aria-live="polite">
+    </div><audio id="wedding-dominikus-melwinda-audio" loop>
+        <source src="audio/play.mp3" type="audio/mpeg">
+    </audio><!-- ==================== --> <!-- JAVASCRIPT           --> <!-- ==================== -->
+    <script>
+        // ==========================================
+        // KONFIGURASI DAN VARIABEL UTAMA
+        // ==========================================
+
+        const weddingDominikusMelwinda = {
+            weddingDate: new Date('2027-10-02T09:00:00+07:00'),
+            musicPlaying: false,
+            isDarkTheme: false,
+            rsvpData: [],
+            messagesData: [],
+            candleCount: 0,
+            pollVotes: { dominikus: 0, melwinda: 0, sama: 0 },
+            totalPolls: 0,
+            hasVoted: false,
+            slideshowImages: [
+                'https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=800',
+                'https://images.unsplash.com/photo-1519741497674-611481863552?w=800',
+                'https://images.unsplash.com/photo-1529634597503-139d3726fed5?w=800',
+                'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=800'
+            ],
+            currentSlideIndex: 0
+        };
+
+        // ==========================================
+        // KONFIGURASI DEFAULT UNTUK ELEMENT SDK
+        // ==========================================
+
+        const defaultConfig = {
+            groom_name: 'Dominikus Triuspa Mahardika',
+            groom_parents_father: 'Bapak Vincentius Raden Tri Joko Kumoro',
+            groom_parents_mother: 'Ibu Vincentia Depaula Ngatimah',
+            bride_name: 'Melwinda Eflin',
+            bride_parents_father: 'Bapak [Nama Ayah]',
+            bride_parents_mother: 'Ibu [Nama Ibu]',
+            wedding_date: 'Sabtu, 02 Oktober 2027',
+            church_name: 'Gereja Katolik Santo Yohanes Pemandi, Janti',
+            priest_name: 'RD. Stephanus Jemmy Fantaw',
+            primary_color: '#D4AF37',
+            secondary_color: '#FAF7F2',
+            text_color: '#2D2D2D',
+            accent_color: '#C9A227',
+            surface_color: '#FFFFFF'
+        };
+
+        let config = { ...defaultConfig };
+
+        // ==========================================
+        // INISIALISASI SDK
+        // ==========================================
+
+        if (window.elementSdk) {
+            window.elementSdk.init({
+                defaultConfig,
+                onConfigChange: async (newConfig) => {
+                    config = { ...config, ...newConfig };
+
+                    const namesEl = document.getElementById('wedding-dominikus-melwinda-names');
+                    if (namesEl) {
+                        namesEl.textContent = `${config.groom_name?.split(' ')[0] || 'Dominikus'} & ${config.bride_name?.split(' ')[0] || 'Melwinda'}`;
+                    }
+
+                    const groomFatherEl = document.getElementById('wedding-dominikus-melwinda-groom-father');
+                    if (groomFatherEl) {
+                        groomFatherEl.textContent = config.groom_parents_father || defaultConfig.groom_parents_father;
+                    }
+
+                    const groomMotherEl = document.getElementById('wedding-dominikus-melwinda-groom-mother');
+                    if (groomMotherEl) {
+                        groomMotherEl.textContent = config.groom_parents_mother || defaultConfig.groom_parents_mother;
+                    }
+
+                    const brideFatherEl = document.getElementById('wedding-dominikus-melwinda-bride-father');
+                    if (brideFatherEl) {
+                        brideFatherEl.textContent = config.bride_parents_father || defaultConfig.bride_parents_father;
+                    }
+
+                    if (newConfig.groom_name) {
+                        config.groom_name = newConfig.groom_name;
+                        const groomEl = document.getElementById('pengantin-groom-fullname');
+                        if (groomEl) groomEl.textContent = newConfig.groom_name;
+                    }
+
+                    if (newConfig.bride_name) {
+                        config.bride_name = newConfig.bride_name;
+                        const brideEl = document.getElementById('pengantin-bride-fullname');
+                        if (brideEl) brideEl.textContent = newConfig.bride_name;
+                    }
+
+                    if (newConfig.groom_parents_father || newConfig.groom_parents_mother) {
+                        const father = newConfig.groom_parents_father || config.groom_parents_father;
+                        const mother = newConfig.groom_parents_mother || config.groom_parents_mother;
+                        const groomParentsEl = document.getElementById('pengantin-groom-parents');
+                        if (groomParentsEl) groomParentsEl.textContent = `${father} & ${mother}`;
+                    }
+
+                    if (newConfig.bride_parents_father || newConfig.bride_parents_mother) {
+                        const father = newConfig.bride_parents_father || config.bride_parents_father;
+                        const mother = newConfig.bride_parents_mother || config.bride_parents_mother;
+                        const brideParentsEl = document.getElementById('pengantin-bride-parents');
+                        if (brideParentsEl) brideParentsEl.textContent = `${father} & ${mother}`;
+                    }
+
+
+                    if (dateEl) {
+                        dateEl.textContent = config.wedding_date || defaultConfig.wedding_date;
+                    }
+
+                    const churchEl = document.getElementById('wedding-dominikus-melwinda-church-name');
+                    if (churchEl) {
+                        churchEl.textContent = config.church_name || defaultConfig.church_name;
+                    }
+
+                    const priestEl = document.getElementById('wedding-dominikus-melwinda-priest-name');
+                    if (priestEl) {
+                        priestEl.textContent = config.priest_name || defaultConfig.priest_name;
+                    }
+
+                    document.documentElement.style.setProperty('--wedding-gold', config.primary_color || defaultConfig.primary_color);
+                    document.documentElement.style.setProperty('--wedding-bg-primary', config.secondary_color || defaultConfig.secondary_color);
+                    document.documentElement.style.setProperty('--wedding-text-primary', config.text_color || defaultConfig.text_color);
+                },
+                mapToCapabilities: (cfg) => ({
+                    recolorables: [
+                        {
+                            get: () => cfg.primary_color || defaultConfig.primary_color,
+                            set: (value) => {
+                                config.primary_color = value;
+                                window.elementSdk.setConfig({ primary_color: value });
+                            }
+                        },
+                        {
+                            get: () => cfg.secondary_color || defaultConfig.secondary_color,
+                            set: (value) => {
+                                config.secondary_color = value;
+                                window.elementSdk.setConfig({ secondary_color: value });
+                            }
+                        },
+                        {
+                            get: () => cfg.text_color || defaultConfig.text_color,
+                            set: (value) => {
+                                config.text_color = value;
+                                window.elementSdk.setConfig({ text_color: value });
+                            }
+                        },
+                        {
+                            get: () => cfg.accent_color || defaultConfig.accent_color,
+                            set: (value) => {
+                                config.accent_color = value;
+                                window.elementSdk.setConfig({ accent_color: value });
+                            }
+                        },
+                        {
+                            get: () => cfg.surface_color || defaultConfig.surface_color,
+                            set: (value) => {
+                                config.surface_color = value;
+                                window.elementSdk.setConfig({ surface_color: value });
+                            }
+                        }
+                    ],
+                    borderables: [],
+                    fontEditable: undefined,
+                    fontSizeable: undefined
+                }),
+                mapToEditPanelValues: (cfg) => new Map([
+                    ['groom_name', cfg.groom_name || defaultConfig.groom_name],
+                    ['groom_parents_father', cfg.groom_parents_father || defaultConfig.groom_parents_father],
+                    ['groom_parents_mother', cfg.groom_parents_mother || defaultConfig.groom_parents_mother],
+                    ['bride_name', cfg.bride_name || defaultConfig.bride_name],
+                    ['bride_parents_father', cfg.bride_parents_father || defaultConfig.bride_parents_father],
+                    ['bride_parents_mother', cfg.bride_parents_mother || defaultConfig.bride_parents_mother],
+                    ['wedding_date', cfg.wedding_date || defaultConfig.wedding_date],
+                    ['church_name', cfg.church_name || defaultConfig.church_name],
+                    ['priest_name', cfg.priest_name || defaultConfig.priest_name]
+                ])
+            });
+        }
+
+        // Inisialisasi Data SDK
+        const dataHandler = {
+            onDataChanged(data) {
+                weddingDominikusMelwinda.messagesData = data.filter(d => d.type === 'message');
+                weddingDominikusMelwinda.rsvpData = data.filter(d => d.type === 'rsvp');
+                renderMessages();
+            }
+        };
+
+        if (window.dataSdk) {
+            window.dataSdk.init(dataHandler);
+        }
+
+        // ==========================================
+        // FUNGSI FLOATING PARTICLES
+        // ==========================================
+
+        function initParticles() {
+            const canvas = document.getElementById('wedding-dominikus-melwinda-particles');
+            const ctx = canvas.getContext('2d');
+
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            const particles = [];
+            const particleCount = 15;
+
+            for (let i = 0; i < particleCount; i++) {
+                particles.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    size: Math.random() * 3 + 1,
+                    speedX: (Math.random() - 0.5) * 0.5,
+                    speedY: Math.random() * 0.3 + 0.1,
+                    opacity: Math.random() * 0.3 + 0.1
+                });
+            }
+
+            function animate() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                particles.forEach(particle => {
+                    particle.x += particle.speedX;
+                    particle.y += particle.speedY;
+
+                    if (particle.x > canvas.width) particle.x = 0;
+                    if (particle.x < 0) particle.x = canvas.width;
+                    if (particle.y > canvas.height) particle.y = 0;
+
+                    ctx.fillStyle = `rgba(212, 175, 55, ${particle.opacity})`;
+                    ctx.beginPath();
+                    ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+                    ctx.fill();
+                });
+
+                requestAnimationFrame(animate);
+            }
+
+            animate();
+
+            window.addEventListener('resize', () => {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            });
+        }
+
+        // ==========================================
+        // FUNGSI BLESSING ANIMATION
+        // ==========================================
+
+        function setupBlessingAnimation() {
+            const app = document.getElementById('wedding-dominikus-melwinda-app');
+            const penutup = document.getElementById('penutup');
+            const blessingOverlay = document.getElementById('wedding-dominikus-melwinda-blessing-overlay');
+            const lightRays = document.getElementById('wedding-dominikus-melwinda-light-rays');
+            const crossIcon = document.getElementById('wedding-dominikus-melwinda-cross-icon');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        blessingOverlay.classList.add('active');
+                        lightRays.classList.add('active');
+                        crossIcon.style.display = 'block';
+                    } else {
+                        blessingOverlay.classList.remove('active');
+                        lightRays.classList.remove('active');
+                        crossIcon.style.display = 'none';
+                    }
+                });
+            }, { threshold: 0.3 });
+
+            if (penutup) observer.observe(penutup);
+        }
+
+        // ==========================================
+        // FUNGSI COUNTDOWN DENGAN FIREWORKS
+        // ==========================================
+
+        function updateCountdown() {
+            const now = new Date();
+            const diff = weddingDominikusMelwinda.weddingDate - now;
+
+            if (diff > 0) {
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+                document.getElementById('wedding-dominikus-melwinda-days').textContent = String(days).padStart(2, '0');
+                document.getElementById('wedding-dominikus-melwinda-hours').textContent = String(hours).padStart(2, '0');
+                document.getElementById('wedding-dominikus-melwinda-minutes').textContent = String(minutes).padStart(2, '0');
+                document.getElementById('wedding-dominikus-melwinda-seconds').textContent = String(seconds).padStart(2, '0');
+            } else {
+                // Hari H tiba - Fireworks!
+                document.getElementById('wedding-dominikus-melwinda-days').textContent = '00';
+                document.getElementById('wedding-dominikus-melwinda-hours').textContent = '00';
+                document.getElementById('wedding-dominikus-melwinda-minutes').textContent = '00';
+                document.getElementById('wedding-dominikus-melwinda-seconds').textContent = '00';
+
+                const closingText = document.getElementById('wedding-dominikus-melwinda-closing-text');
+                if (closingText && closingText.textContent !== 'Hari Ini Kami Menjadi Satu ✝') {
+                    closingText.textContent = 'Hari Ini Kami Menjadi Satu ✝';
+                    createFireworks();
+                    createConfetti();
+                }
+            }
+        }
+
+        // ==========================================
+        // FUNGSI FIREWORKS
+        // ==========================================
+
+        function createFireworks() {
+            const duration = 5000;
+            const fireworkCount = 100;
+            const colors = ['#D4AF37', '#C9A227', '#E8D5A3', '#FFD700'];
+
+            for (let i = 0; i < fireworkCount; i++) {
+                setTimeout(() => {
+                    const piece = document.createElement('div');
+                    piece.className = 'wedding-dominikus-melwinda-firework';
+                    piece.style.left = Math.random() * window.innerWidth + 'px';
+                    piece.style.top = Math.random() * window.innerHeight + 'px';
+                    piece.style.background = colors[Math.floor(Math.random() * colors.length)];
+                    piece.style.boxShadow = `0 0 ${Math.random() * 10 + 5}px ${piece.style.background}`;
+
+                    const angle = Math.random() * Math.PI * 2;
+                    const distance = Math.random() * 200 + 100;
+                    const tx = Math.cos(angle) * distance;
+                    const ty = Math.sin(angle) * distance;
+
+                    piece.style.setProperty('--tx', tx + 'px');
+                    piece.style.setProperty('--ty', ty + 'px');
+                    piece.style.animation = `wedding-dominikus-melwinda-firework ${Math.random() * 1.5 + 1}s ease-out forwards`;
+
+                    document.body.appendChild(piece);
+
+                    setTimeout(() => piece.remove(), duration);
+                }, Math.random() * 500);
+            }
+        }
+
+        // ==========================================
+        // FUNGSI VIRTUAL CANDLE
+        // ==========================================
+
+        weddingDominikusMelwinda.lightCandle = function () {
+            const btn = document.getElementById('wedding-dominikus-melwinda-light-candle-btn');
+            btn.disabled = true;
+
+            for (let i = 1; i <= 3; i++) {
+                const flame = document.getElementById(`wedding-dominikus-melwinda-candle-${i}`);
+                if (flame) {
+                    flame.classList.add('lit');
+                    setTimeout(() => {
+                        flame.classList.remove('lit');
+                    }, 3000);
+                }
+            }
+
+            weddingDominikusMelwinda.candleCount++;
+            document.getElementById('wedding-dominikus-melwinda-candle-count').textContent = `Lilin Doa: ${weddingDominikusMelwinda.candleCount}`;
+
+            showToast('Lilin doa telah dinyalakan sebagai simbol harapan dan berkat. Terima kasih atas doa serta ketulusan hati Anda yang menyertai langkah kami menuju hari bahagia!');
+
+            setTimeout(() => {
+                btn.disabled = false;
+            }, 3100);
+        };
+
+        // ==========================================
+        // FUNGSI POLL
+        // ==========================================
+
+        weddingDominikusMelwinda.votePoll = function (option) {
+            if (weddingDominikusMelwinda.hasVoted) return;
+
+            const optionMap = { dominikus: 0, melwinda: 1, sama: 2 };
+
+            weddingDominikusMelwinda.pollVotes[option]++;
+            weddingDominikusMelwinda.totalPolls++;
+            weddingDominikusMelwinda.hasVoted = true;
+
+            // Disable all poll buttons
+            document.querySelectorAll('.wedding-dominikus-melwinda-poll-button').forEach(btn => {
+                btn.disabled = true;
+                btn.style.opacity = '0.5';
+                btn.style.cursor = 'not-allowed';
+            });
+
+            updatePollDisplay();
+            showToast('Suara Anda telah dicatat! Terima kasih!');
+        };
+
+        function updatePollDisplay() {
+            const total = weddingDominikusMelwinda.totalPolls;
+            if (total === 0) return;
+
+            const votes = weddingDominikusMelwinda.pollVotes;
+            const options = ['dominikus', 'melwinda', 'sama'];
+
+            options.forEach((opt, idx) => {
+                const percentage = total > 0 ? Math.round((votes[opt] / total) * 100) : 0;
+                document.getElementById(`wedding-dominikus-melwinda-poll-bar-${idx + 1}`).style.width = percentage + '%';
+                document.getElementById(`wedding-dominikus-melwinda-poll-vote-${idx + 1}`).textContent = percentage + '%';
+            });
+        }
+
+        // ==========================================
+        // FUNGSI SLIDESHOW
+        // ==========================================
+
+        weddingDominikusMelwinda.openSlideshow = function () {
+            const modal = document.getElementById('wedding-dominikus-melwinda-slideshow-modal');
+            weddingDominikusMelwinda.currentSlideIndex = 0;
+            modal.classList.add('active');
+            showSlide();
+            autoSlideshowFullscreen();
+        };
+
+        weddingDominikusMelwinda.closeSlideshow = function () {
+            const modal = document.getElementById('wedding-dominikus-melwinda-slideshow-modal');
+            modal.classList.remove('active');
+            if (autoSlideshowTimer) clearInterval(autoSlideshowTimer);
+        };
+
+        weddingDominikusMelwinda.nextSlide = function () {
+            weddingDominikusMelwinda.currentSlideIndex++;
+            if (weddingDominikusMelwinda.currentSlideIndex >= weddingDominikusMelwinda.slideshowImages.length) {
+                weddingDominikusMelwinda.closeSlideshow();
+                return;
+            }
+            showSlide();
+        };
+
+        function showSlide() {
+            const img = document.getElementById('wedding-dominikus-melwinda-slideshow-image');
+            const counter = document.getElementById('wedding-dominikus-melwinda-slideshow-counter');
+
+            if (img) img.src = weddingDominikusMelwinda.slideshowImages[weddingDominikusMelwinda.currentSlideIndex];
+            if (counter) counter.textContent = `${weddingDominikusMelwinda.currentSlideIndex + 1} / ${weddingDominikusMelwinda.slideshowImages.length}`;
+        }
+
+        let autoSlideshowTimer;
+        function autoSlideshowFullscreen() {
+            autoSlideshowTimer = setInterval(() => {
+                weddingDominikusMelwinda.nextSlide();
+            }, 3000);
+        }
+
+        // ==========================================
+        // FUNGSI CONFETTI
+        // ==========================================
+
+        function createConfetti() {
+            const confettiPieces = 50;
+            const duration = 2000;
+            const colors = ['#D4AF37', '#C9A227', '#E8D5A3'];
+
+            for (let i = 0; i < confettiPieces; i++) {
+                const piece = document.createElement('div');
+                piece.className = 'wedding-dominikus-melwinda-confetti-piece';
+                piece.style.left = Math.random() * window.innerWidth + 'px';
+                piece.style.top = '0px';
+                piece.style.background = colors[Math.floor(Math.random() * colors.length)];
+                piece.style.width = Math.random() * 10 + 5 + 'px';
+                piece.style.height = piece.style.width;
+                piece.style.animation = `wedding-dominikus-melwinda-confetti ${1 + Math.random() * 1}s ease-in forwards`;
+
+                document.body.appendChild(piece);
+
+                setTimeout(() => piece.remove(), duration);
+            }
+        }
+
+        // ==========================================
+        // FUNGSI SECTION TRANSITION
+        // ==========================================
+
+        function setupSectionTransitions() {
+            const sections = document.querySelectorAll('.wedding-dominikus-melwinda-section');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('transitioning');
+                        setTimeout(() => {
+                            entry.target.classList.remove('transitioning');
+                        }, 300);
+                    }
+                });
+            }, { threshold: 0.3 });
+
+            sections.forEach(section => observer.observe(section));
+        }
+
+        // ==========================================
+        // FUNGSI CINEMATIC INTRO
+        // ==========================================
+
+        function setupCinematicIntro() {
+            const intro = document.getElementById('wedding-dominikus-melwinda-intro');
+            const openBtn = document.getElementById('wedding-dominikus-melwinda-open-btn');
+            const app = document.getElementById('wedding-dominikus-melwinda-app');
+
+            openBtn.addEventListener('click', () => {
+                intro.classList.add('hidden');
+                app.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        }
+
+        // ==========================================
+        // FUNGSI SCROLL & ANIMASI
+        // ==========================================
+
+        function handleScroll() {
+            const app = document.getElementById('wedding-dominikus-melwinda-app');
+            const scrollTop = app.scrollTop;
+            const docHeight = app.scrollHeight - app.clientHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+
+            document.getElementById('wedding-dominikus-melwinda-progress').style.width = scrollPercent + '%';
+
+            const navbar = document.getElementById('wedding-dominikus-melwinda-navbar');
+            if (scrollTop > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+
+            const scrollTopBtn = document.getElementById('wedding-dominikus-melwinda-scroll-top');
+            if (scrollTop > 500) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+
+            document.querySelectorAll('.wedding-dominikus-melwinda-reveal').forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    el.classList.add('visible');
+                }
+            });
+
+            const sections = ['beranda', 'kisah', 'nilai', 'pengantin', 'sakramen', 'galeri', 'rsvp', 'hadiah'];
+            sections.forEach(section => {
+                const el = document.getElementById(section);
+                if (el) {
+                    const rect = el.getBoundingClientRect();
+                    if (rect.top <= 150 && rect.bottom >= 150) {
+                        document.querySelectorAll('.wedding-dominikus-melwinda-nav-link').forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('data-section') === section) {
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                }
+            });
+        }
+
+        // ==========================================
+        // FUNGSI TEMA
+        // ==========================================
+
+        function toggleTheme() {
+            const app = document.getElementById('wedding-dominikus-melwinda-app');
+            const icon = document.getElementById('wedding-dominikus-melwinda-theme-icon');
+
+            weddingDominikusMelwinda.isDarkTheme = !weddingDominikusMelwinda.isDarkTheme;
+
+            if (weddingDominikusMelwinda.isDarkTheme) {
+                app.classList.add('wedding-dominikus-melwinda-dark');
+                icon.textContent = '☀️';
+            } else {
+                app.classList.remove('wedding-dominikus-melwinda-dark');
+                icon.textContent = '🌙';
+            }
+        }
+
+        // ==========================================
+        // FUNGSI MUSIK FINAL (SYNC DENGAN BUKA UNDANGAN)
+        // ==========================================
+
+        const audio = document.getElementById('wedding-dominikus-melwinda-audio');
+        const musicBtn = document.getElementById('wedding-dominikus-melwinda-music-btn');
+        const musicIcon = document.getElementById('wedding-dominikus-melwinda-music-icon');
+        const openBtn = document.getElementById('wedding-dominikus-melwinda-open-btn');
+
+        weddingDominikusMelwinda.musicPlaying = false;
+
+        function playMusic() {
+            if (!audio) return;
+
+            audio.volume = 0.6;
+
+            audio.play().then(() => {
+                weddingDominikusMelwinda.musicPlaying = true;
+                musicBtn.classList.add('playing');
+                musicIcon.textContent = '🎶'; // Google icon
+            }).catch(err => {
+                console.log('Play gagal:', err);
+            });
+        }
+
+        function pauseMusic() {
+            if (!audio) return;
+
+            audio.pause();
+            weddingDominikusMelwinda.musicPlaying = false;
+            musicBtn.classList.remove('playing');
+            musicIcon.textContent = '🎵';
+        }
+
+        function toggleMusic() {
+            if (weddingDominikusMelwinda.musicPlaying) {
+                pauseMusic();
+            } else {
+                playMusic();
+            }
+        }
+
+        musicBtn.addEventListener('click', toggleMusic);
+
+        // ==========================================
+        // TOMBOL BUKA UNDANGAN
+        // ==========================================
+
+        openBtn.addEventListener('click', () => {
+
+            // Tutup intro
+            const intro = document.getElementById('wedding-dominikus-melwinda-intro');
+            if (intro) intro.classList.add('hidden');
+
+            // Play musik otomatis
+            playMusic();
+        });
+
+        // ==========================================
+        // FUNGSI MOBILE MENU
+        // ==========================================
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('wedding-dominikus-melwinda-mobile-menu');
+            const hamburger = document.getElementById('wedding-dominikus-melwinda-hamburger');
+
+            menu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', menu.classList.contains('active'));
+        }
+
+        // ==========================================
+        // FUNGSI LIGHTBOX GALERI
+        // ==========================================
+
+        function openLightbox(src) {
+            const lightbox = document.getElementById('wedding-dominikus-melwinda-lightbox');
+            const img = document.getElementById('wedding-dominikus-melwinda-lightbox-img');
+
+            img.src = src;
+            lightbox.classList.add('active');
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('wedding-dominikus-melwinda-lightbox');
+            lightbox.classList.remove('active');
+        }
+
+        // ==========================================
+        // FUNGSI RSVP & UCAPAN
+        // ==========================================
+
+        async function submitRSVP(event) {
+            event.preventDefault();
+
+            const btn = document.getElementById('wedding-dominikus-melwinda-submit-btn');
+            const btnText = document.getElementById('wedding-dominikus-melwinda-btn-text');
+            const btnLoading = document.getElementById('wedding-dominikus-melwinda-btn-loading');
+
+            const name = document.getElementById('wedding-dominikus-melwinda-guest-name').value.trim();
+            const guestCount = document.getElementById('wedding-dominikus-melwinda-guest-count').value;
+            const attendance = document.querySelector('input[name="attendance"]:checked')?.value;
+            const message = document.getElementById('wedding-dominikus-melwinda-message').value.trim();
+
+            if (!name || !guestCount || !attendance) {
+                showToast('Mohon lengkapi semua field yang wajib diisi');
+                return;
+            }
+
+            btn.disabled = true;
+            btnText.classList.add('hidden');
+            btnLoading.classList.remove('hidden');
+
+            try {
+                const totalData = weddingDominikusMelwinda.rsvpData.length + weddingDominikusMelwinda.messagesData.length;
+                if (totalData >= 999) {
+                    showToast('Maaf, kuota penyimpanan sudah penuh');
+                    return;
+                }
+
+                if (window.dataSdk) {
+                    const rsvpResult = await window.dataSdk.create({
+                        id: 'rsvp_' + Date.now(),
+                        type: 'rsvp',
+                        name: name,
+                        guests: parseInt(guestCount),
+                        attendance: attendance,
+                        message: '',
+                        createdAt: new Date().toISOString()
+                    });
+
+                    if (!rsvpResult.isOk) {
+                        showToast('Gagal menyimpan konfirmasi. Silakan coba lagi.');
+                        return;
+                    }
+
+                    if (message) {
+                        const messageResult = await window.dataSdk.create({
+                            id: 'msg_' + Date.now(),
+                            type: 'message',
+                            name: name,
+                            guests: 0,
+                            attendance: '',
+                            message: message,
+                            createdAt: new Date().toISOString()
+                        });
+
+                        if (!messageResult.isOk) {
+                            showToast('Konfirmasi tersimpan, namun ucapan gagal disimpan.');
+                            return;
+                        }
+                    }
+                }
+
+                showToast('Terima kasih! Konfirmasi Anda telah tersimpan 🙏');
+                createConfetti();
+                document.getElementById('wedding-dominikus-melwinda-rsvp-form').reset();
+
+            } catch (error) {
+                console.error('Error submitting RSVP:', error);
+                showToast('Terjadi kesalahan. Silakan coba lagi.');
+            } finally {
+                btn.disabled = false;
+                btnText.classList.remove('hidden');
+                btnLoading.classList.add('hidden');
+            }
+        }
+
+        // ==========================================
+        // FUNGSI RENDER UCAPAN
+        // ==========================================
+
+        function renderMessages() {
+            const container = document.getElementById('wedding-dominikus-melwinda-messages');
+            const noMessages = document.getElementById('wedding-dominikus-melwinda-no-messages');
+
+            const messages = weddingDominikusMelwinda.messagesData
+                .filter(m => m.message && m.message.trim())
+                .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+
+            if (messages.length === 0) {
+                if (noMessages) noMessages.style.display = 'block';
+                return;
+            }
+
+            if (noMessages) noMessages.style.display = 'none';
+
+            const existingIds = new Set([...container.querySelectorAll('.wedding-dominikus-melwinda-message-card')].map(el => el.dataset.id));
+            const newIds = new Set(messages.map(m => m.id));
+
+            container.querySelectorAll('.wedding-dominikus-melwinda-message-card').forEach(el => {
+                if (!newIds.has(el.dataset.id)) {
+                    el.remove();
+                }
+            });
+
+            messages.forEach(msg => {
+                if (!existingIds.has(msg.id)) {
+                    const card = document.createElement('div');
+                    card.className = 'wedding-dominikus-melwinda-message-card';
+                    card.dataset.id = msg.id;
+
+                    const date = new Date(msg.createdAt);
+                    const formattedDate = date.toLocaleDateString('id-ID', {
+                        day: 'numeric',
+                        month: 'long',
+                        year: 'numeric'
+                    });
+
+                    card.innerHTML = `
+                        <div class="flex items-start gap-3">
+                            <div class="w-10 h-10 rounded-full bg-wedding-gold/20 flex items-center justify-center flex-shrink-0">
+                                <span class="text-wedding-gold font-display">${msg.name.charAt(0).toUpperCase()}</span>
+                            </div>
+                            <div class="flex-1">
+                                <p class="font-display text-sm text-wedding-gold">${msg.name}</p>
+                                <p class="font-body wedding-dominikus-melwinda-text-secondary text-xs mb-2">${formattedDate}</p>
+                                <p class="font-body">${msg.message}</p>
+                            </div>
+                        </div>
+                    `;
+
+                    container.insertBefore(card, container.firstChild);
+                }
+            });
+        }
+
+        // ==========================================
+        // FUNGSI COPY REKENING
+        // ==========================================
+
+        weddingDominikusMelwinda.copyAccount = function (bank) {
+            const accountNumber = document.getElementById(`wedding-dominikus-melwinda-${bank}`).textContent;
+
+            navigator.clipboard.writeText(accountNumber).then(() => {
+                showToast(`Nomor rekening ${bank.toUpperCase()} berhasil disalin!`);
+            }).catch(() => {
+                showToast('Gagal menyalin. Silakan salin manual.');
+            });
+        };
+
+        // ==========================================
+        // FUNGSI TOAST NOTIFICATION
+        // ==========================================
+
+        function showToast(message) {
+            const toast = document.getElementById('wedding-dominikus-melwinda-toast');
+            toast.textContent = message;
+            toast.classList.add('show');
+
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+
+        // ==========================================
+        // FUNGSI SCROLL TO TOP
+        // ==========================================
+
+        function scrollToTop() {
+            document.getElementById('wedding-dominikus-melwinda-app').scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // ==========================================
+        // EVENT LISTENERS
+        // ==========================================
+
+        document.addEventListener('DOMContentLoaded', function () {
+            initParticles();
+            setupCinematicIntro();
+            setupSectionTransitions();
+            setupBlessingAnimation();
+
+            updateCountdown();
+            const countdownInterval = setInterval(updateCountdown, 100);
+
+            document.getElementById('wedding-dominikus-melwinda-app').addEventListener('scroll', handleScroll);
+
+            setTimeout(handleScroll, 100);
+
+            document.getElementById('wedding-dominikus-melwinda-theme-btn').addEventListener('click', toggleTheme);
+            document.getElementById('wedding-dominikus-melwinda-music-btn').addEventListener('click', toggleMusic);
+            document.getElementById('wedding-dominikus-melwinda-hamburger').addEventListener('click', toggleMobileMenu);
+            document.getElementById('wedding-dominikus-melwinda-close-menu').addEventListener('click', toggleMobileMenu);
+
+            document.querySelectorAll('.wedding-dominikus-melwinda-mobile-link').forEach(link => {
+                link.addEventListener('click', toggleMobileMenu);
+            });
+
+            document.getElementById('wedding-dominikus-melwinda-scroll-top').addEventListener('click', scrollToTop);
+
+            // Virtual Candle
+            document.getElementById('wedding-dominikus-melwinda-light-candle-btn').addEventListener('click', () => {
+                weddingDominikusMelwinda.lightCandle();
+            });
+
+            // Slideshow
+            document.getElementById('wedding-dominikus-melwinda-slideshow-btn').addEventListener('click', () => {
+                weddingDominikusMelwinda.openSlideshow();
+            });
+
+            document.getElementById('wedding-dominikus-melwinda-slideshow-close').addEventListener('click', () => {
+                weddingDominikusMelwinda.closeSlideshow();
+            });
+
+            document.getElementById('wedding-dominikus-melwinda-slideshow-modal').addEventListener('click', function (e) {
+                if (e.target === this) {
+                    weddingDominikusMelwinda.closeSlideshow();
+                }
+            });
+
+            // Gallery lightbox
+            document.querySelectorAll('.wedding-dominikus-melwinda-gallery-item').forEach(item => {
+                item.addEventListener('click', function () {
+                    const src = this.getAttribute('data-src');
+                    openLightbox(src);
+                });
+            });
+
+            document.getElementById('wedding-dominikus-melwinda-close-lightbox').addEventListener('click', closeLightbox);
+            document.getElementById('wedding-dominikus-melwinda-lightbox').addEventListener('click', function (e) {
+                if (e.target === this) closeLightbox();
+            });
+
+            // RSVP form
+            document.getElementById('wedding-dominikus-melwinda-rsvp-form').addEventListener('submit', submitRSVP);
+
+            // Keyboard navigation
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') {
+                    closeLightbox();
+                    weddingDominikusMelwinda.closeSlideshow();
+                    const mobileMenu = document.getElementById('wedding-dominikus-melwinda-mobile-menu');
+                    if (mobileMenu.classList.contains('active')) {
+                        toggleMobileMenu();
+                    }
+                }
+            });
+        });
+    </script>
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'9d5f6c15f6725c61',t:'MTc3MjQ0NDI0MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+</body>
+
+</html>
